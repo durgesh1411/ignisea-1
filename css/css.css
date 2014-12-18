@@ -108,8 +108,19 @@ width: 1200px;
 
 /*=========Sports & Gaming Page CSS starts==========*/
 .sports_body{
-		
-	background: url("../images/noise.png") repeat scroll 0% 0% rgb(255,231,45);
+	background: url("../images/tribal.png") repeat scroll 0% 0% rgb(27,27,27);
+	width: 100%; 
 }
-
+.sports_title{
+	font-size: 3.5em;
+	color:rgb(27,27,27);
+	text-align: center;
+	background: url("../images/tribal2.png") repeat scroll 0% 0%;
+	padding-bottom: 105px;
+	padding-top: 105px;
+}
+.sports_title_container{
+	padding-top: 190px;
+	padding-bottom: 190px;
+}
 /*=========Sports & Gaming Page CSS ends==========*/
