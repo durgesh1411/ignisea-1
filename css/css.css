@@ -1,3 +1,25 @@
+/*========================== Fonts========================*/
+@font-face {
+  font-family: 'Raleway-ExtraLight';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Raleway ExtraLight'), local('Raleway-ExtraLight'), url(../fonts/Raleway-ExtraLight.woff) format('woff');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), url(../fonts/Raleway.woff) format('woff');
+}
+@font-face {
+  font-family: 'Raleway-SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url(../fonts/Raleway-SemiBold.woff) format('woff');
+}
+/*========================== Fonts========================*/
+
+
 /*=================Main Page CSS starts===================*/
 * {
 	margin: 0; 
@@ -5,7 +27,7 @@
 }
 body {
 	background:rgb(230,228,229); 
-	font-family: arial, verdana, tahoma;
+	font-family: 'Raleway-ExtraLight';
 }
 
 /*Time to apply widths for accordian to work
@@ -123,4 +145,28 @@ width: 1200px;
 	padding-top: 190px;
 	padding-bottom: 190px;
 }
+.sports_super6_title{
+	color: white;
+	font-size: 65px;
+	padding-top: 150px;
+	text-align: right;
+}
+.sports_super6_about{
+	color:white; 
+	font-size: 20px;
+	text-align: right;
+}
+.sports_super6{
+	margin: 0px !important;
+	background-color: rgb(46,204,113);
+}
+.sports_super6_details{
+	width:1000px;
+	z-index: 5000;
+	margin-top:-250px ;
+	margin-left: 100px;
+	height: 250px;
+	background:url('../images/noise.png') repeat scroll 0% 0% rgb(189, 195, 199);
+}
+
 /*=========Sports & Gaming Page CSS ends==========*/
