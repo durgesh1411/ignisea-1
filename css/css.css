@@ -1,3 +1,28 @@
+<<<<<<< HEAD
+=======
+/*========================== Fonts========================*/
+@font-face {
+  font-family: 'Raleway-ExtraLight';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Raleway ExtraLight'), local('Raleway-ExtraLight'), url(../fonts/Raleway-ExtraLight.woff) format('woff');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), url(../fonts/Raleway.woff) format('woff');
+}
+@font-face {
+  font-family: 'Raleway-SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url(../fonts/Raleway-SemiBold.woff) format('woff');
+}
+/*========================== Fonts========================*/
+
+
+>>>>>>> a0385430bcf080d4e5766490a77d896a9b81143d
 /*=================Main Page CSS starts===================*/
 * {
 	margin: 0; 
@@ -5,7 +30,11 @@
 }
 body {
 	background:rgb(230,228,229); 
+<<<<<<< HEAD
 	font-family: arial, verdana, tahoma;
+=======
+	font-family: 'Raleway-ExtraLight';
+>>>>>>> a0385430bcf080d4e5766490a77d896a9b81143d
 }
 
 /*Time to apply widths for accordian to work
@@ -83,4 +112,128 @@ width: 1200px;
 	font-size: 16px;
 }
 
+<<<<<<< HEAD
 /*=============Main Page CSS ends===============*/
+=======
+
+.mainPage_tile1{
+	width: 70%;
+	background-color: rgb(217,22,30);
+	top: 0px;
+	color:white;
+	-webkit-transform:rotate(30deg);
+	transform:rotate(30deg);
+	-webkit-animation: myfirst 5s; /* Chrome, Safari, Opera */
+    animation: myfirst 5s;
+}
+@-webkit-keyframes myfirst {
+    from {background: red;}
+    to {background: yellow;}
+}
+.mainPage_tile2{
+	width: 100%;
+	background-color: rgb(240,139,25);
+	top: 0px;
+	color:white;
+}
+/*=============Main Page CSS ends===============*/
+
+/*=========Sports & Gaming Page CSS starts==========*/
+.sports_body{
+	background: url("../images/tribal.png") repeat scroll 0% 0% rgb(27,27,27);
+	width: 100%; 
+}
+.sports_title{
+	font-size: 3.5em;
+	color:rgb(27,27,27);
+	text-align: center;
+	background: url("../images/tribal2.png") repeat scroll 0% 0%;
+	padding-bottom: 105px;
+	padding-top: 105px;
+}
+.sports_button{
+	height: 60px;
+	width:180px;
+	position: absolute;
+	border:solid 2px white;
+	background-color: rgba(0,0,0,0);
+	margin-top: -155px;
+	margin-left: 600px;
+}
+.sports_button:hover{
+	cursor: pointer;
+	transition:all 1s ease;
+	background-color: white;
+	border-radius: 30%;
+	height: 60px;
+	width:180px;
+}
+.sports_button_text{
+	color: white;
+	font-family: 'Raleway-SemiBold';
+	font-size: 25px;
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 8px;
+}
+.sports_button_text:hover{
+	transition:all 1s ease;
+	color:rgb(27,27,27);
+}
+.sports_title_container{
+	padding-top: 190px;
+	padding-bottom: 190px;
+}
+.sports_super6_title{
+	color: white;
+	font-size: 65px;
+	padding-top: 150px;
+	padding-right: 50px;
+	margin-right: -50px;
+	margin-left: -15px;
+	text-align: right;
+	background-color: rgb(46,204,113);
+	font-family:'Raleway-ExtraLight'; 
+}
+.sports_super6_about{
+	color:white; 
+	font-size: 20px;
+	text-align: right;
+	padding-right: 50px;
+	margin-right: -50px;
+	margin-left: -15px;
+	padding-bottom: 40px;
+	background-color: rgb(46,204,113);
+	font-family: 'Raleway-ExtraLight';
+	font-weight: bold;	
+}
+.sports_super6{
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	/*background-color: rgb(46,204,113);*/
+}
+.sports_super6_image{
+	background: url('../images/cricket.jpg');
+	width:100%;
+	height: 100%;
+}
+.sports_super6_detail{
+	height:263px;
+	width: 950px;
+	background-color: rgb(242,241,237);
+	position: absolute;
+	margin-top: -262px;
+	margin-left: -470px;
+}
+.sports_super6_detail > ul >li{
+	font-family: 'Raleway-ExtraLight';
+	font-weight: bold;
+	font-size: 20px;
+	color: rgb(30,30,30);
+	letter-spacing: 0.8px;
+	margin-left: 150px;
+	padding-top: 40px;
+	padding-bottom: 10px;
+}
+/*=========Sports & Gaming Page CSS ends==========*/
+>>>>>>> a0385430bcf080d4e5766490a77d896a9b81143d
