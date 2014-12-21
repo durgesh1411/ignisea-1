@@ -152,6 +152,7 @@ width: 1200px;
 	padding-top: 105px;
 }
 .sports_button{
+	color: white;
 	height: 60px;
 	width:180px;
 	position: absolute;
@@ -159,26 +160,23 @@ width: 1200px;
 	background-color: rgba(0,0,0,0);
 	margin-top: -155px;
 	margin-left: 600px;
+	transition:all 1s ease;
 }
 .sports_button:hover{
 	cursor: pointer;
-	transition:all 1s ease;
 	background-color: white;
 	border-radius: 30%;
 	height: 60px;
 	width:180px;
+	color:#292929;
 }
 .sports_button_text{
-	color: white;
 	font-family: 'Raleway-SemiBold';
 	font-size: 25px;
 	text-align: center;
 	vertical-align: middle;
 	margin-top: 8px;
-}
-.sports_button_text:hover{
 	transition:all 1s ease;
-	color:rgb(27,27,27);
 }
 .sports_title_container{
 	padding-top: 190px;
