@@ -27,7 +27,6 @@
 }
 body {
 	background:rgb(230,228,229); 
-	font-family: arial, verdana, tahoma;
 	font-family: 'Raleway-ExtraLight';
 }
 
@@ -87,7 +86,6 @@ default width = 800/5 = 160px;
 /*The LI hover style should override the UL hover style*/
 .accordian ul li:hover {width: 29.33%;}
 
-
 .accordian li img {
 	display: block;
 }
@@ -96,10 +94,10 @@ default width = 800/5 = 160px;
 .image_title {
 	background: rgba(0, 0, 0, 0.5);
 	position: absolute;
-	left: 0; bottom: 0;	
-	width: 100%;	
-
+	left: 0; bottom: 0;
+	width: 100%;
 }
+
 .image_title a {
 	display: block;
 	color: #fff;
@@ -146,32 +144,29 @@ default width = 800/5 = 160px;
 	padding-top: 105px;
 }
 .sports_button{
-	color: white;
 	height: 60px;
 	width:180px;
+	color: white;
 	position:absolute;
 	border:solid 2px white;
 	background-color: rgba(0,0,0,0);
-	margin-top: -155px;
-	margin-left: 600px;
 	transition:all 1s ease;
 }
 .sports_button:hover{
 	cursor: pointer;
 	background-color: white;
+	color:rgb(27,27,27);
 	border-radius:20px;
 	height: 60px;
 	width:180px;
-	color:#292929;
 }
 .sports_button_text{
 	font-family: 'Raleway-SemiBold';
 	font-size: 25px;
 	text-align: center;
 	vertical-align: middle;
-	margin-top: 8px;
-	transition:all 1s ease;
 }
+
 .sports_title_container{
 	padding-top: 190px;
 	padding-bottom: 190px;
