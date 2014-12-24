@@ -253,4 +253,68 @@ width: 1200px;
 	padding-left: 315px;
 }
 
+.sports_kite{
+	width: 100%;
+	background:url('../images/kite1.jpg') center center;
+	background-size: 100% 100%;
+	color:rgb(255,255,255);
+	padding-top: 275px;
+	padding-bottom: 275px;
+	margin-top: -20px;
+	font-family: 'Raleway-ExtraLight';
+	font-weight: bold;
+}
+.sports_kite_content{
+	background-color: rgba(0,123,255,0.7);
+	font-size: 70px;
+	text-align: center;
+}
+.sports_kite_about{
+	background-color:rgb(255,64,64);
+	height: 50px;
+	width: 400px;
+	font-size: 20px;
+	padding-top: 10px;
+	padding-left: 5px;
+	position: absolute;
+	margin-top: -317px;
+	margin-left: 500px;
+}
+.sports_kite_about > div{
+	width: 0;
+	height: 0;
+	position: relative;
+	margin-top: -40px;
+	margin-left: 170px;
+	border-top: 25px transparent solid;
+	border-bottom: 25px transparent solid;
+	border-right: 25px rgb(40,115,183) solid;
+}
+.sports_kite_register{
+	background-color:rgb(0,164,0);
+	height: 100px;
+	width: 150px;
+	font-size: 45px;
+	color: white;
+	padding-top: 25px;
+	padding-left: 65px;
+	position: absolute;
+	margin-top: 100px;
+	margin-left: 1197px;
+	transition:all 1s ease;
+}
+.sports_kite_register > div{
+	height: 0;
+	width: 0;
+	position: relative;
+	border-top: 50px transparent solid;
+	border-bottom: 50px transparent solid;
+	border-left: 50px rgb(91,152,211) solid;
+	margin-left: -65px;
+	margin-top: -88px;
+}
+.sports_kite_register:hover{
+	width: 250px;
+	margin-left: 1097px;
+}
 /*=========Sports & Gaming Page CSS ends==========*/
