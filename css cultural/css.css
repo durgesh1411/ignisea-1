@@ -1,0 +1,36 @@
+.cultural_body{
+	background: url("../images/dance.jpg") repeat scroll 0% 0% ;
+	width: 100%; 
+}
+.cultural_title{
+	font-size: 7em;
+	color:#FB8500;
+	text-align: center;
+
+	padding-bottom: 105px;
+	padding-top: 105px;
+}
+.cultural_title_container{
+	padding-top: 190px;
+	padding-bottom: 120px;
+}
+.h1
+{
+	font-size: 3em;
+}
+.side1
+{
+	color:#F98809;
+}
+.side2
+{
+	color:#09F9E8;
+}
+.side3
+{
+	color:#EF4646;
+}
+.side4
+{
+	color:#99D6E3;
+}
