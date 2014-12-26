@@ -338,9 +338,46 @@ default width = 800/5 = 160px;
 .sports_kite_register:hover span{
 	visibility: hidden;
 }
+.sports_kite_register_link{
+	font-size: 25px;
+	color: rgb(255,255,255);
+}
+.sports_kite_register:hover .sports_kite_register_link{
+	visibility: visible;
+}
+
+.sports_mobile{
+	width: 100%;
+	background:url('../images/poster3.jpg') center center;
+	background-size: 100% 100%;
+
+}
+.sports_mobile_column1{
+	background-color: rgba(24,24,24,0.5);
+	color: white;
+	text-align: center;
+}
+.sports_mobile_column1:first-child{
+	font-family: 'Raleway-SemiBold';
+	font-size: 70px;
+	padding-top: 150px;
+	padding-bottom: 350px;
+}
+.sports_mobile_column2{
+	background-color:rgba(24,24,24,0.5);
+	color:white;
+	text-align: center;
+}
+.sports_mobile_column2_list{
+	font-size: 25px;
+	font-family: 'Raleway-ExtraLight';
+	font-weight: bold;
+	padding-top: 150px;
+	padding-bottom: 160px;
+}
 /*=========Sports & Gaming Page CSS ends==========*/
 
-/*=========Sports & Gaming Page CSS ends==========*/
+
 
 /*==========Technical Events Page CSS Starts============*/
 
