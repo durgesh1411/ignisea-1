@@ -1,20 +1,883 @@
-
+/*========================== Fonts========================*/
+@font-face {
+  font-family: 'Raleway-ExtraLight';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Raleway ExtraLight'), local('Raleway-ExtraLight'), url(../fonts/Raleway-ExtraLight.woff) format('woff');
+}
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
   src: local('Raleway'), url(../fonts/Raleway.woff) format('woff');
 }
-.cultural_body{
-	background: url("../images/dance.jpg") repeat scroll 0% 0% ;
+@font-face {
+  font-family: 'Raleway-SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url(../fonts/Raleway-SemiBold.woff) format('woff');
+}
+/*========================== Fonts========================*/
+
+
+
+/*=================Main Page CSS starts===================*/
+* {
+	margin: 0; 
+	padding: 0;
+}
+
+.cover{
+background:url('../images/bg01-crop.png') repeat-x scroll 0% 0% #181719;
+}
+
+/*Time to apply widths for accordian to work
+Width of image = 640px
+total images = 5
+so width of hovered image = 640px
+width of un-hovered image = 40px - you can set this to anything
+so total container width = 640 + 40*4 = 800px;
+default width = 800/5 = 160px;
+*/
+
+.accordian {
+	width:100%; 
+	height: 430px;
+	overflow:hidden;
+	
+	/*Time for some styling*/
+	margin: 0px auto;
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	-webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+
+/*A small hack to prevent flickering on some browsers*/
+.accordian ul {
+	width: 2000px;
+	/*This will give ample space to the last item to move
+	instead of falling down/flickering during hovers.*/
+}
+
+.accordian li {
+	position: relative;
+	display: block;
+	width: 280px;
+	float: left;
+	
+	border-left: 1px solid #888;
+	
+	box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	
+	/*Transitions to give animation effect*/
+	transition: all 0.8s;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	/*If you hover on the images now you should be able to 
+	see the basic accordian*/
+}
+
+/*Reduce with of un-hovered elements*/
+.accordian ul:hover li {width: 40px;}
+/*Lets apply hover effects now*/
+/*The LI hover style should override the UL hover style*/
+.accordian ul li:hover {
+width: 1100px;
+
+}
+
+
+.accordian li img {
+	display: block;
+}
+
+/*Image title styles*/
+.image_title {
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	left: 0; bottom: 0;	
+	width: 1100px;	
+
+}
+.image_title a {
+	display: block;
+	color: #fff;
+	text-decoration: none !important;
+	padding: 20px;
+	font-size: 16px;
+}
+/*styling of circles below accordian*/
+.li_space{
+width:200px;
+height:150px;
+float:left;
+padding-top:50px !important;
+margin-top:30px;
+}
+.last{
+
+}
+.left_padding{
+padding-left:50px;
+padding-top:50px !important;
+}
+.row1{
+margin-top:110px;
+margin-bottom:10px;
+padding-top:120px;
+padding-bottom:160px;
+padding-right:0px  !important;
+margin-right:0px !important;
+}
+.border{
+margin-top:20px;
+border-bottom:1px solid;
+}
+.round{
+width:130px;
+height:130px;
+float:right;
+border:5px solid #282729;
+border-radius:10px;
+text-align:center;
+line-height:11em;
+transform:rotate(45deg);
+}
+.icon-size{
+font-size:50px;
+transform:rotate(25deg);
+color:#D24726;
+}
+.row1-text{
+font-size:19px;
+font-weight:bold;
+letter-spacing: 1px;
+}
+h1{
+color:#DB6648 !important;
+}
+.box{
+height:300px;
+width:100%;
+background: url('../images/6.jpg') repeat!important;
+}
+div{
+transition:all .5s ease-in .02s;
+-webkit-transition:all .5s ease-in .02s;
+-moz-transition:all .5s ease-in .02s;
+}
+#overlay{
+background:rgba(0,0,0,.75);
+text-align:center;
+padding:110px 0px 120px;
+opacity:0;
+}
+.box:hover #overlay{
+opacity:1;
+}
+
+ .box:hover{
+transform:scale(1.01);
+-moz-transform:scale(1.01);
+-webkit-transform:scale(1.01);
+text-decoration:none !important;
+color:orange !important;
+}
+#word{
+font-size:50px;
+font-weight:500;
+}
+a:hover{
+text-decoration:none !important;
+color:orange !important;
+}
+.box_right1{
+height:300px;
+width:100%;
+background-color:;
+text-align:center;
+display:block;
+}
+.box_right2{
+margin-top:20px;
+display:none;
+
+}
+.pad{
+padding-left:0px !important;
+padding-right:0px !important;
+}
+
+.know_more{
+position:absolute;
+color:white;
+border:1px solid #282729 !important; 
+border-radius:0px !important;
+padding:20px 30px !important; 
+bottom:0px;
+left:auto;
+background:rgba(0,0,0,.75);
+transition:all .5s ease-in-out 1s;
+-webkit-transition:all .5s ease-in-out 1s;
+-moz-transition:all .5s ease-in-out 1s;
+}
+
+.know_more_sponsors{
+margin-top:30px;
+margin-bottom:30px;
+float:left;
+color:white;
+border:1px solid #282729 !important; 
+border-radius:90px !important;
+padding:30px 80px !important;
+bottom:20px;
+left:200px;
+background:rgba(0,0,0,.75);
+transition:all .5s ease-in-out 1s;
+-webkit-transition:all .5s ease-in-out 1s;
+-moz-transition:all .5s ease-in-out 1s;
+}
+.row2{
+margin-top:10px;
+margin-bottom:10px;
+margin-right:0px !important;
+padding-top:50px;
+padding-bottom:50px;
+}
+.go_round{
+border-radius:50%;
+border:1px solid white;
+overflow:hidden;
+}
+.round_sponsors{
+width:60px;
+height:60px;
+border:5px solid #282729;
+border-radius:10px;
+text-align:center;
+line-height:11em;
+transform:rotate(45deg);
+ margin-bottom:25px;
+margin-top:25px;
+position:relative;
+}
+
+.icon-size_sponsors{
+transform:rotate(25deg);
+color:#D24726;
+float:right;
+margin-top:15px !important;
+margin-right:18px !important;
+}
+
+#whole_2{
+display:none;
+}
+/*footer*/
+.row_foot{
+margin-top:30px;
+padding-right:0px  !important;
+margin-right:0px !important;
+border-bottom:1px solid;
+}
+.container_footer{
+width:auto;
+background:url('../images/bg01-small.png');
+padding-right:0px !important;
+}
+.foot_align{
+text-align:center;
+padding-right:0px !important;
+padding-left:0px !important;
+padding-bottom:9px !important;
+}
+ul{
+list-style:none;
+}
+.border_right{
+border-right:2px solid;
+}
+.round_footer{
+width:60px;
+height:60px;
+border-radius:50%;
+background-color:white;
+text-align:center;
+}
+.icon-size_footer{
+font-size:20px;
+text-align:center;
+padding:20px 0px 10px;
+}
+.stay_in_touch{
+width:400px;
+height:70px;
+border-radius:50px;
+background:#181719;
+text-align:center;
+
+overflow:hidden;
+}
+.s{
+font-size:30px;
+padding:20px 22px;
+padding-left:10px;
+padding-right:10px;
+overflow:hidden;
+}
+.register_main{
+background:url('../images/keyboard-bg.jpg') fixed;
+padding:50px 0px 50px;
+margin-left:0px !important;
+margin-right:0px !important;
+}
+.over_image{
+text-align:center;
+margin-left: auto;
+padding-left: 15px;
+padding-right: 15px;
+margin-right: auto;
+
+}
+h3{
+color:#D24726!important;
+}
+#footer_but{
+margin-top:30px !important;
+border:1px solid grey !important; 
+border-radius:90px !important;
+padding:25px 70px !important;
+background:rgba(0,0,0,0);
+transition:all .5s ease .01s;
+-webkit-transition:all .5s ease .01s;
+-moz-transition:all .5s ease .01s;
+}
+#footer_but:hover{
+background:rgba(255, 255, 255, 0.1);
+transform-origin:bottom;
+transform:translateY(-10px);
+-webkit-transform:translateY(-10px);
+-moz-transform:translateY(-10px);
+}
+.footer_row{
+text-align:center;
+padding-top:20px;
+margin-left:0px !important;
+margin-right:0px !important;
+}
+.border_foot{
+border-bottom:1px solid;
+}
+.copyright_color{
+color: rgba(128, 128, 128, 0.75);
+}
+.copyright_color_1{
+color: rgba(128, 128, 128, 0.75);
+border-right:1px solid;
+}
+.spacing_footer{
+margin-top:10px !important;
+margin-bottom:10px !important;
+font-size:15px;
+}
+#h6{
+margin-bottom:0px !important;
+margin-top:0px !important;
+padding-top:0px !important;
+padding-bottom:0px !important;
+}
+#h6_1{
+margin-bottom:1px !important;
+padding-top:0px !important;
+}
+.percent{
+width:25% !important;
+}
+/*=============Main Page CSS ends===============*/
+
+/*=============Literary Page CSS starts===============*/
+.top_row{
+margin-left:5px !important;
+overflow:hidden;
+}
+.top_right{
+margin-left:px;
+margin-top:15px;
+}
+.top_left{
+overflow:hidden;
+}
+.right_list{
+padding-top:20px;
+padding-bottom:15px;
+padding-left:60px;
+}
+
+.top_sub{
+font-size:20px;
+line-height:2em;
+color: rgba(128, 128, 128, 0.75)!important;
+font-weight:500 !important;
+}
+.top_font{
+line-height:2em;
+color:#6B7770;
+font-size:11.5pt;
+font-weight:400;
+}
+.top2_right{
+overflow:hidden;
+}
+.right_img{
+height:200px;
+}
+.register_btn{
+background:;
+opacity:;
+border:1px solid grey !important;
+border-radius:0px !important;
+}
+.arrow{
+text-align:center;
+font-size:14px;
+color:white;
+width:60px;
+height:55px;
+background:#DF7366;
+padding: 1.75em 0px 0.75em;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+margin: 0px 0px 0px;
+box-shadow: 0 0 10px 1px white;
+	-webkit-box-shadow: 0 0 10px 1px white;
+	-moz-box-shadow: 0 0 10px 1px white;
+}
+.cone{
+width:55px;
+border-left: 1.6em solid #DF7366;
+border-top: 2.1em solid transparent !important;
+border-bottom: 2.0em solid transparent !important;
+right: -3.9em;
+bottom:-1px;
+position:absolute;
+}
+.move_right{
+float:right;
+margin-top:-40px;
+margin-bottom:0px;
+color:#483949 !important;
+opacity:0.7;
+padding-right:170px;
+}
+.position{
+margin-top:30px;
+margin-bottom:30px;
+}.position_li{
+position:relative !important;
+}
+.arrow1{
+width:210px;
+height:131px;
+background:grey;
+padding: 1.75em 0px 0.75em;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+margin: 0px 0px 0px;
+box-shadow: 0 0 10px 1px white;
+	-webkit-box-shadow: 0 0 10px 1px white;
+	-moz-box-shadow: 0 0 10px 1px white;
+}
+.cone1{
+width:210px;
+border-top: 2em solid grey;
+border-left: 7.5em solid transparent !important;
+border-right: 7.5em solid transparent !important;
+transform:rotate(180deg);
+
+}
+.cover_lit{
+background-color:beige;
+}
+hr{
+border-color:#DF7366 !important;
+opacity:0.3;
+}
+.move_right:hover{
+color:#DF7366 !important;
+opacity:1;
+}
+/*=============Main Page CSS ends===============*/
+
+/*=========Sports & Gaming Page CSS starts==========*/
+.sports_body{
+	background: url("../images/tribal.png") repeat scroll 0% 0% rgb(27,27,27);
 	width: 100%; 
-	opacity: 0.5;
+}
+.sports_title{
+	font-size: 3.5em;
+	color:rgb(27,27,27);
+	text-align: center;
+	background: url("../images/tribal2.png") repeat scroll 0% 0%;
+	padding-bottom: 105px;
+	padding-top: 105px;
+}
+.sports_button{
+	height: 60px;
+	width:180px;
+	color: white;
+	position:absolute;
+	border:solid 2px white;
+	background-color: rgba(0,0,0,0);
+	transition:all 1s ease;
+}
+.sports_button:hover{
+	cursor: pointer;
+	background-color: white;
+	color:rgb(27,27,27);
+	border-radius:20px;
+	height: 60px;
+	width:180px;
+}
+.sports_button_text{
+	font-family: 'Raleway-SemiBold';
+	font-size: 25px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.sports_title_container{
+	padding-top: 190px;
+	padding-bottom: 190px;
+}
+.sports_super6_title{
+	color: white;
+	font-size: 65px;
+	padding-top: 150px;
+	padding-right: 50px;
+	margin-right: -50px;
+	margin-left: -15px;
+	text-align: right;
+	background-color: rgb(46,204,113);
+	font-family:'Raleway-ExtraLight'; 
+}
+.sports_super6_about{
+	color:white; 
+	font-size: 20px;
+	text-align: right;
+	padding-right: 50px;
+	margin-right: -50px;
+	margin-left: -15px;
+	padding-bottom: 40px;
+	background-color: rgb(46,204,113);
+	font-family: 'Raleway-ExtraLight';
+	font-weight: bold;	
+}
+
+.sports_super6_image{
+	background: url('../images/cricket.jpg');
+	width:100%;
+	height: 100%;
+}
+.sports_super6_detail{
+	height:263px;
+	width: 950px;
+	background-color: rgba(242,241,237,0.8);
+	position: relative;
+	margin-top: -262px;
+	margin-left: -470px;
+}
+.sports_super6_detail > ul >li{
+	font-family: 'Raleway-ExtraLight';
+	font-weight: bold;
+	font-size: 20px;
+	color: rgb(30,30,30);
+	letter-spacing: 0.8px;
+	margin-left: 150px;
+	padding-top: 40px;
+	padding-bottom: 10px;
+}
+
+.sports_lan_detail_tile{
+	margin-top: 316px;
+}
+.sports_lan_detail{
+	background-color:rgb(52, 73, 94);
+	padding-left: 20px;
+	margin-left: -13px;
+	padding-right: 20px;
+	margin-right: -30px;
+	margin-top: -67px;
+}
+.sports_lan_detail > li{
+	font-family: 'Raleway-ExtraLight';
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+	letter-spacing: 0.8px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.sports_lan{
+	height:250px;
+	width: 750px;
+	background-color: rgba(242,241,237,0.5);
+	position: relative;
+	margin-top: -572px;
+	margin-left: -465px;
+}
+.sports_lan_title{
+	font-family: 'Raleway-SemiBold';
+	font-size: 45px;
+	color: rgb(0,0,0);
+	padding-top: 100px;
+	padding-left: 315px;
+}
+
+.sports_kite{
+	width: 100%;
+	background:url('../images/kite1.jpg') center center;
+	background-size: 100% 100%;
+	color:rgb(255,255,255);
+	padding-top: 275px;
+	padding-bottom: 275px;
+	margin-top: -20px;
+	font-family: 'Raleway-ExtraLight';
+	font-weight: bold;
+}
+.sports_kite_content{
+	background-color: rgba(0,123,255,0.7);
+	font-size: 70px;
+	text-align: center;
+}
+.sports_kite_about{
+	background-color:rgba(255,64,64,0.8);
+	height: 50px;
+	width: 450px;
+	font-size: 20px;
+	padding-top: 10px;
+	padding-left: 5px;
+	position: absolute;
+	margin-top: -317px;
+	margin-left: 475px;
+	text-align: center;
+}
+.sports_kite_about_left {
+	width: 0;
+	height: 0;
+	position: absolute;
+	margin-top: -10px;
+	margin-left: -5px;
+	border-top: 25px transparent solid;
+	border-bottom: 25px transparent solid;
+	border-left: 25px rgb(56,130,196) solid;
+}
+.sports_kite_about_right {
+	width: 0;
+	height: 0;
+	position: relative;
+	margin-top: -40px;
+	margin-left: 420px;
+	border-top: 25px transparent solid;
+	border-bottom: 25px transparent solid;
+	border-right: 25px rgb(84,147,210) solid;
+}
+
+.sports_kite_register{
+	background-color:rgb(0,164,0);
+	height: 100px;
+	width: 150px;
+	font-size: 45px;
+	color: white;
+	padding-top: 25px;
+	padding-left: 65px;
+	position: absolute;
+	margin-top: 100px;
+	margin-left: 1197px;
+	transition:all 1s ease;
+}
+.sports_kite_register > div{
+	height: 0;
+	width: 0;
+	position: relative;
+	border-top: 50px transparent solid;
+	border-bottom: 50px transparent solid;
+	border-left: 50px rgb(91,152,211) solid;
+	margin-left: -65px;
+	margin-top: -88px;
+}
+.sports_kite_register:hover{
+	width: 250px;
+	margin-left: 1097px;
+}
+.sports_kite_register:hover span{
+	visibility: hidden;
+}
+.sports_kite_register_link{
+	font-size: 25px;
+	color: rgb(255,255,255);
+}
+.sports_kite_register:hover .sports_kite_register_link{
+	visibility: visible;
+}
+
+.sports_mobile{
+	width: 100%;
+	background:url('../images/poster3.jpg') center center;
+	background-size: 100% 100%;
+
+}
+.sports_mobile_column1{
+	background-color: rgba(24,24,24,0.5);
+	color: white;
+	text-align: center;
+}
+.sports_mobile_column1:first-child{
+	font-family: 'Raleway-SemiBold';
+	font-size: 70px;
+	padding-top: 150px;
+	padding-bottom: 350px;
+}
+.sports_mobile_column2{
+	background-color:rgba(24,24,24,0.5);
+	color:white;
+	text-align: center;
+}
+.sports_mobile_column2_list{
+	font-size: 25px;
+	font-family: 'Raleway-ExtraLight';
+	font-weight: bold;
+	padding-top: 150px;
+	padding-bottom: 160px;
+}
+/*=========Sports & Gaming Page CSS ends==========*/
+
+
+
+/*==========Technical Events Page CSS Starts============*/
+
+@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans);
+
+.tech_body {
+	background: #dff;
+	font-family: 'Merriweather Sans', arial;
+	text-align: center;
+	padding-top: 75px;
+}
+
+/*Common styles for buttons*/
+.tech_button {
+	/*We will create a white to black gradient using 'background-image' with 60% opacity. This will be later merged with animated 'background-color' to give the effect of an animated gradient*/
+	background-image: linear-gradient(
+		rgba(255,255,255,0.6), 
+		rgba(0,0,0,0.6)
+	);
+	
+	display: inline-block;
+	height: 15vh; width: 17%;
+	line-height: 15vh; /*Same as height*/
+	margin: 3%;
+	
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	
+	border-radius: 5px;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+#rgb {
+	background-color: #FF0; /*yellow*/
+	animation: rgb 3s infinite alternate;
+}
+@keyframes rgb {
+	/* 0% will fallback to the default background-color of #rgb*/
+	50% {background-color: #06F; /*blue*/ }
+	100% {background-color: #F00; /*red*/}
+}
+
+#namedcolors {
+	background-color: red;
+	animation: namedcolors 0.3s infinite alternate;
+}
+@keyframes namedcolors {
+	100% {background-color: orange;}
+}
+
+#hue {
+	background-color: hsl(0, 100%, 50%); /*red*/
+	animation: hue 3s infinite alternate;
+}
+@keyframes hue {
+	/*hue will animate from 0 to 360. Saturation and Lightness remain constant*/
+	20% {background-color: hsl(72, 100%, 50%);}
+	40% {background-color: hsl(144, 100%, 50%);}
+	60% {background-color: hsl(216, 100%, 50%);}
+	80% {background-color: hsl(288, 100%, 50%);}
+	100% {background-color: hsl(360, 100%, 50%);}
+}
+
+#saturation {
+	/*0% saturated red = grey*/
+	background-color: hsl(0, 0%, 50%); 
+	animation: saturation 3s infinite alternate;
+}
+@keyframes saturation {
+	/*100% saturated red*/
+	100% {background-color: hsl(0, 100%, 50%); }
+}
+
+#lightness {
+	/*0% lightness = black*/
+	background-color: hsl(0, 100%, 0%); 
+	animation: lightness 3s infinite alternate;
+}
+@keyframes lightness {
+	/*50% lightness = red*/
+	50% {background-color: hsl(0, 100%, 50%); }
+	/*100% lightness = white*/
+	100% {background-color: hsl(0, 100%, 100%); }
+}
+
+/*animating gradients to flat colors - a bit complex*/
+#topflat {
+	color: #999;
+	/*a transparent-black gradient above white base, making it a white-black gradient*/
+	background-color: white;
+	background-image: linear-gradient(rgba(0, 0, 0, 0), black);
+	animation: topflat 3s infinite alternate;
+}
+@keyframes topflat {
+	100% {background-color: black;}
+}
+
+#bottomflat {
+	color: #999;
+	/*a white-transparent gradient above black base, making it a white-black gradient*/
+	background-color: black;
+	background-image: linear-gradient(white, rgba(255, 255, 255, 0));
+	animation: bottomflat 3s infinite alternate;
+}
+@keyframes bottomflat {
+	100% {background-color: white;}
+}
+
+/*==========Technical Events Page CSS Ends============*/
+
+/*=======================================Cultural Events Page CSS Starts================================================================*/
+
+
+.cultural_body{
+	background: url("../images/b2.jpg") repeat scroll 0% 0% ;
+	width: 100%; 
+	
 }
 .cultural_title{
 	font-size: 7em;
 	color:white;
 	text-align: center;
-	font-family: "Raleway-Extralight";
+	
 	padding-bottom: 105px;
 	padding-top: 105px;
 
@@ -22,37 +885,21 @@
 .cultural_title_container{
 	padding-top: 190px;
 	padding-bottom: 120px;
-	color: rgba(0,0,0,0.75);
+	background-color: rgba(255,255,255,0.7);
 }
 
 
-.side1
-{
-	color:#F98809;
-	font-size: 2.4em;
-}
-.side2
-{
-	color:#09F9E8;
-}
-.side3
-{
-	color:#EF4646;
-}
-.side4
-{
-	color:#99D6E3;
-}
+
 .title
 {
 	position: absolute;
-	top: 2.5em;
-	color: red;
-	font-size: 8.5em;
+	top: 2.6em;
+	color: #305559;
+	font-size: 7.5em;
 	font-weight: bold;
 	text-align: center;
-	padding-left: 200px;
-	font-family:  'Lato', Calibri, Arial, sans-serif;";
+	padding-left: 160px;
+	font-family: 'Raleway'
 }
 
 .content1
@@ -83,51 +930,8 @@
   color: red !important;
   font-size: 2em !important;
 }
-html, body, div, span, applet, object, iframe,
- h3, h4, h5, h6,  blockquote, pre,
- abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-	font-family:  'Lato', Calibri, Arial, sans-serif;
-}
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section, main {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/* -------------------------------- 
 
 Primary style
 
@@ -143,27 +947,6 @@ html * {
   box-sizing: border-box;
 }
 
-body {
-  font-size: 100%;
-  font-family: "Droid Serif", serif;
-  color: #7f8c97;
-  background-color: #e9f0f5;
-
-}
-
-a {
-  
-  text-decoration: none;
-  font-family: "Raleway-Extralight", sans-serif;
-  
-}
-
-
-
-h1, h2 {
-  font-family: 'Lato', Calibri, Arial, sans-serif;
-font-weight: bold;  font-size: 3em;
-}
 /* -------------------------------- 
 
 Modules - reusable parts of our design
@@ -186,17 +969,7 @@ Modules - reusable parts of our design
 Main components 
 
 -------------------------------- */
-header {
-  height: 200px;
-  line-height: 200px;
-  text-align: center;
-  background: #303e49;
-}
-header h1 {
-  color: white;
-  font-size: 18px;
-  font-size: 1.125rem;
-}
+
 @media only screen and (min-width: 1170px) {
   header {
     height: 300px;
@@ -285,7 +1058,7 @@ header h1 {
   background: #F98809;
 }
 .cd-timeline-img.cd-movie {
-  background: #09F9E8;
+  background: #FFD521;
 }
 .cd-timeline-img.cd-location {
   background: #99D6E3;
@@ -619,3 +1392,4 @@ header h1 {
   }
 }
 
+/*===========================Cultural Events Page CSS Ends================================================*/
