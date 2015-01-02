@@ -605,11 +605,11 @@ opacity:1;
 	height: 100%;
 }
 .sports_super6_detail{
-	height:263px;
+	height:275px;
 	width: 950px;
 	background-color: rgba(242,241,237,0.8);
 	position: relative;
-	margin-top: -262px;
+	margin-top: -277px;
 	margin-left: -470px;
 }
 .sports_super6_detail > ul >li{
@@ -625,6 +625,7 @@ opacity:1;
 
 .sports_lan_detail_tile{
 	margin-top: 316px;
+	margin-left: -5px;
 }
 .sports_lan_detail{
 	background-color:rgb(52, 73, 94);
@@ -632,7 +633,7 @@ opacity:1;
 	margin-left: -13px;
 	padding-right: 20px;
 	margin-right: -30px;
-	margin-top: -67px;
+	margin-top: -50px;
 }
 .sports_lan_detail > li{
 	font-family: 'Raleway-ExtraLight';
@@ -644,11 +645,11 @@ opacity:1;
 	padding-bottom: 30px;
 }
 .sports_lan{
-	height:250px;
+	height:265px;
 	width: 750px;
 	background-color: rgba(242,241,237,0.5);
 	position: relative;
-	margin-top: -572px;
+	margin-top: -592px;
 	margin-left: -465px;
 }
 .sports_lan_title{
@@ -671,9 +672,11 @@ opacity:1;
 	font-weight: bold;
 }
 .sports_kite_content{
-	background-color: rgba(0,123,255,0.7);
+	background-color: rgba(27,27,27,0.5);
 	font-size: 70px;
 	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 .sports_kite_about{
 	background-color:rgba(255,64,64,0.8);
@@ -687,27 +690,10 @@ opacity:1;
 	margin-left: 475px;
 	text-align: center;
 }
-.sports_kite_about_left {
-	width: 0;
-	height: 0;
-	position: absolute;
-	margin-top: -10px;
-	margin-left: -5px;
-	border-top: 25px transparent solid;
-	border-bottom: 25px transparent solid;
-	border-left: 25px rgb(56,130,196) solid;
-}
-.sports_kite_about_right {
-	width: 0;
-	height: 0;
-	position: relative;
-	margin-top: -40px;
-	margin-left: 420px;
-	border-top: 25px transparent solid;
-	border-bottom: 25px transparent solid;
-	border-right: 25px rgb(84,147,210) solid;
-}
 
+.sports_kite_icon{
+	margin-left: -20px;
+}
 .sports_kite_register{
 	background-color:rgb(0,164,0);
 	height: 100px;
@@ -721,16 +707,7 @@ opacity:1;
 	margin-left: 1197px;
 	transition:all 1s ease;
 }
-.sports_kite_register > div{
-	height: 0;
-	width: 0;
-	position: relative;
-	border-top: 50px transparent solid;
-	border-bottom: 50px transparent solid;
-	border-left: 50px rgb(91,152,211) solid;
-	margin-left: -65px;
-	margin-top: -88px;
-}
+
 .sports_kite_register:hover{
 	width: 250px;
 	margin-left: 1097px;
@@ -740,10 +717,17 @@ opacity:1;
 }
 .sports_kite_register_link{
 	font-size: 25px;
+	position: absolute;
 	color: rgb(255,255,255);
+	margin-top: -55px;
+	margin-left: -30px;
+	visibility: hidden;
+	transition:all 0.7s ease;
 }
+
 .sports_kite_register:hover .sports_kite_register_link{
 	visibility: visible;
+	margin-left: 50px;
 }
 
 .sports_mobile{
@@ -793,18 +777,6 @@ opacity:1;
 	padding-top: 20%;
 }
 
-.sports_foot{
-	background-color: rgba(248,236,194,0.5);
-}
-.sports_foot_column{
-	margin-top: -100px;
-	position: relative;
-	transition:0.5s all ease;
-}
-.sports_foot_column:hover{
-	margin-top: -110px;
-	margin-bottom: 10px;
-}
 /*=========Sports & Gaming Page CSS ends==========*/
 
 
