@@ -1282,24 +1282,26 @@ canvas {
 .inner_text
 {
 	font-size: 2.2em;
-	text-align: justify;
+	
 	padding-top: 60px;
 	color: black
+	padding-left: 1000px !important;
+	margin-left: 1000px;
 }
 .side1_inner_text
 {
 	color: #2288B7;
-	font-size: 4em;
+	font-size: 2em;
 }
 .side_text
 {
-  font-size: 3em;
+  font-size: 2em;
  
 }
 .link
 {
   color: red !important;
-  font-size: 4em !important;
+  font-size: 2em !important;
 }
 .change
 {
@@ -1317,7 +1319,10 @@ height: 600px;
 	background-repeat: no-repeat;
 background-position: center;
 }
-
+.side{
+	margin-top: -265px;
+	text-align: left;
+}
 /* HTML5 display-role reset for older browsers */
 
 Primary style
