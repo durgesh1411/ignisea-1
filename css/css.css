@@ -782,16 +782,50 @@ opacity:1;
 
 
 /*==========Technical Events Page CSS Starts============*/
-
-@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans);
-
 .tech_body {
-	background: #dff;
-	font-family: 'Merriweather Sans', arial;
+	background: black;
+	font-family: 'Raleway-SemiBold';
 	text-align: center;
-	padding-top: 75px;
 }
-
+.tech_scroll{
+	overflow: hidden;
+}
+.tech_body a{
+	text-decoration: none;
+	cursor: pointer;
+}
+.tech_dimmer{
+	position: fixed;
+	display: block;
+	z-index: 2;
+	background-color: rgba(0,0,0,0.85);
+	padding-top: 17%;
+	overflow: hidden;
+	box-sizing: border-box;
+	color: rgb(0,254,0);
+	height: 100vh;
+	width: 100%;
+	font-family: 'Raleway';
+	font-size: 100px;
+    -webkit-animation: color-change 3s infinite alternate;
+    -moz-animation: color-change 3s infinite alternate;
+    -o-animation: color-change 3s infinite alternate;
+    -ms-animation: color-change 3s infinite alternate;
+    animation: color-change 3s infinite alternate;
+}
+.tech_showNone{
+	display: none;
+}
+canvas {
+	display: block;
+	position: absolute;
+	z-index: -2;
+	height: 100%;
+}
+.tech_set_canvas {
+	position: relative;
+	overflow: hidden;
+}
 /*Common styles for buttons*/
 .tech_button {
 	/*We will create a white to black gradient using 'background-image' with 60% opacity. This will be later merged with animated 'background-color' to give the effect of an animated gradient*/
@@ -804,90 +838,396 @@ opacity:1;
 	height: 15vh; width: 17%;
 	line-height: 15vh; /*Same as height*/
 	margin: 3%;
-	
-	color: white;
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: bold;
-	
 	border-radius: 5px;
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
 }
-
+.tech_set_button{
+	padding-top: 70px;
+}
+.tech_set_modal{
+	margin-top:3%;
+	font-family: 'Raleway';
+}
+.tech_set_modal .modal-content{
+	background: rgba(255,255,255,0.85);
+}
+.tech_set_modal .modal-title{
+	font-family: 'Raleway-SemiBold';
+	font-size: 38px;
+	color: blue;
+	-webkit-animation: color_title 3s infinite alternate;
+    -moz-animation: color_title 3s infinite alternate;
+    -o-animation: color_title 3s infinite alternate;
+    -ms-animation: color_title 3s infinite alternate;
+    animation: color_title 3s infinite alternate;
+}
+.tech_set_modal .modal-header,.modal-title,.modal-body,.modal-footer{
+	border: 0px;
+}
+.tech_set_modal .modal-body .row:first-child{
+	font-size: 18px;
+	padding-bottom: 1.5%;
+}
+.tech_set_modal .modal-body .row{
+	margin: 2%;
+}
+.tech_set_modal .modal-body .row div:first-child{
+	height:280px;
+	width:400px;
+	-webkit-box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.75);
+}
+.tech_set_modal .modal-body .row div:last-child{
+	font-size: 15px;
+	font-family: 'Raleway';
+	text-align:left;
+	padding-left:5%;
+}
+.tech_set_modal .modal-body .row span{
+	bottom: 0px;
+	float: right;
+	font-family: 'Raleway-SemiBold';
+}
+.tech_event_desc{
+	font-size: 15px;
+	font-family: 'Raleway';
+	text-align:left;
+	padding-left:5%;	
+}
+.tech_set_modal .modal-footer{
+	padding-top: 0%;
+}
+.tech_set_modal .modal-footer button{
+	font-family: 'Raleway-SemiBold';
+	font-size: 17px;
+}
+@-webkit-keyframes color_title {
+    20% {color: hsl(252, 100%, 50%);}
+	40% {color: hsl(324, 100%, 50%);}
+	60% {color: hsl(36, 100%, 50%);}
+	80% {color: hsl(108, 100%, 50%);}
+	100% {color: hsl(180, 100%, 50%);}
+}
+@-moz-keyframes color_title {
+    20% {color: hsl(252, 100%, 50%);}
+	40% {color: hsl(324, 100%, 50%);}
+	60% {color: hsl(36, 100%, 50%);}
+	80% {color: hsl(108, 100%, 50%);}
+	100% {color: hsl(180, 100%, 50%);}
+}
+@-ms-keyframes color_title {
+   	20% {color: hsl(252, 100%, 50%);}
+	40% {color: hsl(324, 100%, 50%);}
+	60% {color: hsl(36, 100%, 50%);}
+	80% {color: hsl(108, 100%, 50%);}
+	100% {color: hsl(180, 100%, 50%);}
+}
+@-o-keyframes color_title {
+    20% {color: hsl(252, 100%, 50%);}
+	40% {color: hsl(324, 100%, 50%);}
+	60% {color: hsl(36, 100%, 50%);}
+	80% {color: hsl(108, 100%, 50%);}
+	100% {color: hsl(180, 100%, 50%);}
+}
+@keyframes color_title {
+    20% {color: hsl(252, 100%, 50%);}
+	40% {color: hsl(324, 100%, 50%);}
+	60% {color: hsl(36, 100%, 50%);}
+	80% {color: hsl(108, 100%, 50%);}
+	100% {color: hsl(180, 100%, 50%);}
+}
+@-webkit-keyframes color-change {
+    20% {background-color: hsla(72, 100%, 50%,0.9);color: hsl(252, 100%, 50%);}
+	40% {background-color: hsla(144, 100%, 50%,0.9);color: hsl(324, 100%, 50%);}
+	60% {background-color: hsla(216, 100%, 50%,0.9);color: hsl(36, 100%, 50%);}
+	80% {background-color: hsla(288, 100%, 50%,0.9);color: hsl(108, 100%, 50%);}
+	100% {background-color: hsla(360, 100%, 50%,0.9);color: hsl(180, 100%, 50%);}
+}
+@-moz-keyframes color-change {
+    20% {background-color: hsla(72, 100%, 50%,0.9);color: hsl(252, 100%, 50%);}
+	40% {background-color: hsla(144, 100%, 50%,0.9);color: hsl(324, 100%, 50%);}
+	60% {background-color: hsla(216, 100%, 50%,0.9);color: hsl(36, 100%, 50%);}
+	80% {background-color: hsla(288, 100%, 50%,0.9);color: hsl(108, 100%, 50%);}
+	100% {background-color: hsla(360, 100%, 50%,0.9);color: hsl(180, 100%, 50%);}
+}
+@-ms-keyframes color-change {
+    20% {background-color: hsla(72, 100%, 50%,0.9);color: hsl(252, 100%, 50%);}
+	40% {background-color: hsla(144, 100%, 50%,0.9);color: hsl(324, 100%, 50%);}
+	60% {background-color: hsla(216, 100%, 50%,0.9);color: hsl(36, 100%, 50%);}
+	80% {background-color: hsla(288, 100%, 50%,0.9);color: hsl(108, 100%, 50%);}
+	100% {background-color: hsla(360, 100%, 50%,0.9);color: hsl(180, 100%, 50%);}
+}
+@-o-keyframes color-change {
+    20% {background-color: hsla(72, 100%, 50%,0.9);color: hsl(252, 100%, 50%);}
+	40% {background-color: hsla(144, 100%, 50%,0.9);color: hsl(324, 100%, 50%);}
+	60% {background-color: hsla(216, 100%, 50%,0.9);color: hsl(36, 100%, 50%);}
+	80% {background-color: hsla(288, 100%, 50%,0.9);color: hsl(108, 100%, 50%);}
+	100% {background-color: hsla(360, 100%, 50%,0.9);color: hsl(180, 100%, 50%);}
+}
+@keyframes color-change {
+    20% {background-color: hsla(72, 100%, 50%,0.9);color: hsl(252, 100%, 50%);}
+	40% {background-color: hsla(144, 100%, 50%,0.9);color: hsl(324, 100%, 50%);}
+	60% {background-color: hsla(216, 100%, 50%,0.9);color: hsl(36, 100%, 50%);}
+	80% {background-color: hsla(288, 100%, 50%,0.9);color: hsl(108, 100%, 50%);}
+	100% {background-color: hsla(360, 100%, 50%,0.9);color: hsl(180, 100%, 50%);}
+}
 #rgb {
 	background-color: #FF0; /*yellow*/
-	animation: rgb 3s infinite alternate;
+	color:#00F;
+	-webkit-animation: rgb 3s infinite alternate;
+    -moz-animation: rgb 3s infinite alternate;
+    -o-animation: rgb 3s infinite alternate;
+    -ms-animation: rgb 3s infinite alternate;
+    animation: rgb 3s infinite alternate;
+}
+@-webkit-keyframes rgb {
+    50% {background-color: #06F; /*blue*/ color:#F90;}
+	100% {background-color: #F00; /*red*/color: #0FF;}
+}
+@-moz-keyframes rgb {
+    50% {background-color: #06F; /*blue*/ color:#F90;}
+	100% {background-color: #F00; /*red*/color: #0FF;}
+}
+@-ms-keyframes rgb {
+    50% {background-color: #06F; /*blue*/ color:#F90;}
+	100% {background-color: #F00; /*red*/color: #0FF;}
+}
+@-o-keyframes rgb {
+    50% {background-color: #06F; /*blue*/ color:#F90;}
+	100% {background-color: #F00; /*red*/color: #0FF;}
 }
 @keyframes rgb {
-	/* 0% will fallback to the default background-color of #rgb*/
-	50% {background-color: #06F; /*blue*/ }
-	100% {background-color: #F00; /*red*/}
+    50% {background-color: #06F; /*blue*/ color:#F90;}
+	100% {background-color: #F00; /*red*/color: #0FF;}
 }
-
 #namedcolors {
 	background-color: red;
-	animation: namedcolors 0.3s infinite alternate;
+	color: aqua;
+	-webkit-animation: namedcolors 0.3s infinite alternate;
+    -moz-animation: namedcolors 0.3s infinite alternate;
+    -o-animation: namedcolors 0.3s infinite alternate;
+    -ms-animation: namedcolors 0.3s infinite alternate;
+    animation: namedcolors 0.3s infinite alternate;
+}
+@-webkit-keyframes namedcolors {
+   100% {background-color: orange;color:lightblue; }
+}
+@-moz-keyframes namedcolors {
+    100% {background-color: orange;color:lightblue; }
+}
+@-ms-keyframes namedcolors {
+    100% {background-color: orange;color:lightblue; }
+}
+@-o-keyframes namedcolors {
+    100% {background-color: orange;color:lightblue; }
 }
 @keyframes namedcolors {
-	100% {background-color: orange;}
+   100% {background-color: orange;color:lightblue; }
 }
-
 #hue {
 	background-color: hsl(0, 100%, 50%); /*red*/
-	animation: hue 3s infinite alternate;
+	color: hsl(180, 100%, 50%); hue 3s infinite alternate;
+	-webkit-animation: hue 3s infinite alternate;
+    -moz-animation: hue 3s infinite alternate;
+    -o-animation: hue 3s infinite alternate;
+    -ms-animation: hue 3s infinite alternate;
+    animation: hue 3s infinite alternate;
+}
+@-webkit-keyframes hue {
+   /*hue will animate from 0 to 360. Saturation and Lightness remain constant*/
+	20% {background-color: hsl(72, 100%, 50%);color: hsl(252, 100%, 50%);}
+	40% {background-color: hsl(144, 100%, 50%);color: hsl(324, 100%, 50%);}
+	60% {background-color: hsl(216, 100%, 50%);color: hsl(36, 100%, 50%);}
+	80% {background-color: hsl(288, 100%, 50%);color: hsl(108, 100%, 50%);}
+	100% {background-color: hsl(360, 100%, 50%);color: hsl(180, 100%, 50%);}
+}
+@-moz-keyframes hue {
+    /*hue will animate from 0 to 360. Saturation and Lightness remain constant*/
+	20% {background-color: hsl(72, 100%, 50%);color: hsl(252, 100%, 50%);}
+	40% {background-color: hsl(144, 100%, 50%);color: hsl(324, 100%, 50%);}
+	60% {background-color: hsl(216, 100%, 50%);color: hsl(36, 100%, 50%);}
+	80% {background-color: hsl(288, 100%, 50%);color: hsl(108, 100%, 50%);}
+	100% {background-color: hsl(360, 100%, 50%);color: hsl(180, 100%, 50%);}
+}
+@-ms-keyframes hue {
+    /*hue will animate from 0 to 360. Saturation and Lightness remain constant*/
+	20% {background-color: hsl(72, 100%, 50%);color: hsl(252, 100%, 50%);}
+	40% {background-color: hsl(144, 100%, 50%);color: hsl(324, 100%, 50%);}
+	60% {background-color: hsl(216, 100%, 50%);color: hsl(36, 100%, 50%);}
+	80% {background-color: hsl(288, 100%, 50%);color: hsl(108, 100%, 50%);}
+	100% {background-color: hsl(360, 100%, 50%);color: hsl(180, 100%, 50%);}
+}
+@-o-keyframes hue {
+    /*hue will animate from 0 to 360. Saturation and Lightness remain constant*/
+	20% {background-color: hsl(72, 100%, 50%);color: hsl(252, 100%, 50%);}
+	40% {background-color: hsl(144, 100%, 50%);color: hsl(324, 100%, 50%);}
+	60% {background-color: hsl(216, 100%, 50%);color: hsl(36, 100%, 50%);}
+	80% {background-color: hsl(288, 100%, 50%);color: hsl(108, 100%, 50%);}
+	100% {background-color: hsl(360, 100%, 50%);color: hsl(180, 100%, 50%);}
 }
 @keyframes hue {
-	/*hue will animate from 0 to 360. Saturation and Lightness remain constant*/
-	20% {background-color: hsl(72, 100%, 50%);}
-	40% {background-color: hsl(144, 100%, 50%);}
-	60% {background-color: hsl(216, 100%, 50%);}
-	80% {background-color: hsl(288, 100%, 50%);}
-	100% {background-color: hsl(360, 100%, 50%);}
+   /*hue will animate from 0 to 360. Saturation and Lightness remain constant*/
+	20% {background-color: hsl(72, 100%, 50%);color: hsl(252, 100%, 50%);}
+	40% {background-color: hsl(144, 100%, 50%);color: hsl(324, 100%, 50%);}
+	60% {background-color: hsl(216, 100%, 50%);color: hsl(36, 100%, 50%);}
+	80% {background-color: hsl(288, 100%, 50%);color: hsl(108, 100%, 50%);}
+	100% {background-color: hsl(360, 100%, 50%);color: hsl(180, 100%, 50%);}
 }
-
 #saturation {
 	/*0% saturated red = grey*/
 	background-color: hsl(0, 0%, 50%); 
-	animation: saturation 3s infinite alternate;
+	color: hsl(180, 0%, 50%);
+	-webkit-animation: saturation 3s infinite alternate;
+    -moz-animation: saturation 3s infinite alternate;
+    -o-animation: saturation 3s infinite alternate;
+    -ms-animation: saturation 3s infinite alternate;
+    animation: saturation 3s infinite alternate;
+}
+@-webkit-keyframes saturation {
+  /*100% saturated red*/
+	100% {background-color: hsl(0, 100%, 50%);color: hsl(180, 100%, 50%); }
+}
+@-moz-keyframes saturation {
+   /*100% saturated red*/
+	100% {background-color: hsl(0, 100%, 50%);color: hsl(180, 100%, 50%); }
+}
+@-ms-keyframes saturation {
+    /*100% saturated red*/
+	100% {background-color: hsl(0, 100%, 50%);color: hsl(180, 100%, 50%); }
+}
+@-o-keyframes saturation {
+    /*100% saturated red*/
+	100% {background-color: hsl(0, 100%, 50%);color: hsl(180, 100%, 50%); }
 }
 @keyframes saturation {
-	/*100% saturated red*/
-	100% {background-color: hsl(0, 100%, 50%); }
+   /*100% saturated red*/
+	100% {background-color: hsl(0, 100%, 50%);color: hsl(180, 100%, 50%); }
 }
-
 #lightness {
 	/*0% lightness = black*/
 	background-color: hsl(0, 100%, 0%); 
-	animation: lightness 3s infinite alternate;
+	color: hsl(180, 100%, 0%);
+	-webkit-animation: lightness 3s infinite alternate;
+    -moz-animation: lightness 3s infinite alternate;
+    -o-animation: lightness 3s infinite alternate;
+    -ms-animation: lightness 3s infinite alternate;
+    animation: lightness 3s infinite alternate;
+}
+@-webkit-keyframes lightness {
+  /*50% lightness = red*/
+	50% {background-color: hsl(0, 100%, 50%);color: hsl(180, 100%, 50%); }
+	/*100% lightness = white*/
+	100% {background-color: hsl(0, 100%, 100%);color: hsl(180, 100%, 100%); }
+}
+@-moz-keyframes lightness {
+   /*50% lightness = red*/
+	50% {background-color: hsl(0, 100%, 50%);color: hsl(180, 100%, 50%); }
+	/*100% lightness = white*/
+	100% {background-color: hsl(0, 100%, 100%);color: hsl(180, 100%, 100%); }
+}
+@-ms-keyframes lightness {
+    /*50% lightness = red*/
+	50% {background-color: hsl(0, 100%, 50%);color: hsl(180, 100%, 50%); }
+	/*100% lightness = white*/
+	100% {background-color: hsl(0, 100%, 100%);color: hsl(180, 100%, 100%); }
+}
+@-o-keyframes lightness {
+    /*50% lightness = red*/
+	50% {background-color: hsl(0, 100%, 50%);color: hsl(180, 100%, 50%); }
+	/*100% lightness = white*/
+	100% {background-color: hsl(0, 100%, 100%);color: hsl(180, 100%, 100%); }
 }
 @keyframes lightness {
-	/*50% lightness = red*/
-	50% {background-color: hsl(0, 100%, 50%); }
+   /*50% lightness = red*/
+	50% {background-color: hsl(0, 100%, 50%);color: hsl(180, 100%, 50%); }
 	/*100% lightness = white*/
-	100% {background-color: hsl(0, 100%, 100%); }
+	100% {background-color: hsl(0, 100%, 100%);color: hsl(180, 100%, 100%); }
 }
-
 /*animating gradients to flat colors - a bit complex*/
 #topflat {
 	color: #999;
 	/*a transparent-black gradient above white base, making it a white-black gradient*/
 	background-color: white;
 	background-image: linear-gradient(rgba(0, 0, 0, 0), black);
-	animation: topflat 3s infinite alternate;
+	-webkit-animation: topflat 3s infinite alternate;
+    -moz-animation: topflat 3s infinite alternate;
+    -o-animation: topflat 3s infinite alternate;
+    -ms-animation: topflat 3s infinite alternate;
+    animation: topflat 3s infinite alternate;
+}
+@-webkit-keyframes topflat {
+	100% {background-color: black;color: white;}
+}
+@-moz-keyframes topflat {
+	100% {background-color: black;color: white;}
+}
+@-ms-keyframes topflat {
+	100% {background-color: black;color: white;}
+}
+@-o-keyframes topflat {
+	100% {background-color: black;color: white;}
 }
 @keyframes topflat {
-	100% {background-color: black;}
+	100% {background-color: black;color: white;}
 }
-
 #bottomflat {
 	color: #999;
 	/*a white-transparent gradient above black base, making it a white-black gradient*/
 	background-color: black;
 	background-image: linear-gradient(white, rgba(255, 255, 255, 0));
-	animation: bottomflat 3s infinite alternate;
+	-webkit-animation: bottomflat 3s infinite alternate;
+    -moz-animation: bottomflat 3s infinite alternate;
+    -o-animation: bottomflat 3s infinite alternate;
+    -ms-animation: bottomflat 3s infinite alternate;
+    animation: bottomflat 3s infinite alternate;
+}
+@-webkit-keyframes bottomflat {
+	100% {background-color: white;color: black;}
+}
+@-moz-keyframes bottomflat {
+	100% {background-color: white;color: black;}
+}
+@-ms-keyframes bottomflat {
+	100% {background-color: white;color: black;}
+}
+@-o-keyframes bottomflat {
+	100% {background-color: white;color: black;}
 }
 @keyframes bottomflat {
-	100% {background-color: white;}
+	100% {background-color: white;color: black;}
 }
+.tech_post {
+   position: relative;
+   -webkit-box-shadow: 0 1px 3px rgba(100, 100, 100, 0.4), 0 0 40px rgba(100, 100, 100, 0.1) inset;
+   -moz-box-shadow: 0 1px 3px rgba(100, 100, 100, 0.4), 0 0 40px rgba(100, 100, 100, 0.1) inset;
+   box-shadow: 0 1px 3px rgba(100, 100, 100, 0.4), 0 0 40px rgba(100, 100, 100, 0.1) inset;
+}
+.tech_folded-corner {
+   width: 0px;
+   height: 0px;
+   position: absolute;
+   top: 0px;
+   right: 0px;
+   border-width: 0;
+   border-style: solid;
+   background: hsla(260,5%,60%,0.2);
+   -webkit-box-shadow: 2px -2px 0px #000, 0 1px 1px rgba(0,0,0,0.1), -1px 1px 1px rgba(0,0,0,0.1);
+   -moz-box-shadow: 2px -2px 0px #000, 0 1px 1px rgba(0,0,0,0.1), -1px 1px 1px rgba(0,0,0,0.1);
+   -webkit-border-bottom-left-radius: 15px;
+   -moz-border-radius: 0 0 0 15px;
+   border-radius: 0 0 0 7px;
+   border-color: #fff rgba(255,255,255,0.85) transparent;
+   -webkit-transition: border-width 0.2s ease-out;
+   -moz-transition: border-width 0.2s ease-out;
+   -ms-transition: border-width 0.2s ease-out;
+   -o-transition: border-width 0.2s ease-out;
+   transition: border-width 0.2s ease-out;
+}
+.tech_post:hover .tech_folded-corner {border-width: 0 40px 40px 0;}
+.tech_photo .folded-corner {background: hsla(260,5%,75%,0.5);}
 
 /*==========Technical Events Page CSS Ends============*/
 
