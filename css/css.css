@@ -512,17 +512,21 @@ opacity:1;
 
 /*=========Sports & Gaming Page CSS starts==========*/
 .sports_body{
-	background: url("../images/tribal.png") repeat scroll 0% 0% rgb(27,27,27);
-	width: 100%; 
+	background: url("../images/stadium3.jpg") center center;
+	background-size: 100% 100%;
 }
 .sports_title{
-	font-size: 3.5em;
-	color:rgb(27,27,27);
+	background-color: rgba(0,0,0,0.4);
+	position: relative;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	font-family: 'Raleway-ExtraLight';
+	font-weight: bold;
+	font-size: 4.5em;
 	text-align: center;
-	background: url("../images/tribal2.png") repeat scroll 0% 0%;
-	padding-bottom: 105px;
-	padding-top: 105px;
+	color: white;
 }
+
 .sports_button{
 	height: 60px;
 	width:180px;
@@ -732,12 +736,12 @@ opacity:1;
 
 .sports_mobile{
 	width: 100%;
-	background:url('../images/poster3.jpg') center center;
+	background:url('../images/mobile.jpg') center center;
 	background-size: 100% 100%;
 
 }
 .sports_mobile_column1{
-	background-color: rgba(24,24,24,0.5);
+	background-color: rgba(24,24,24,0.3);
 	color: white;
 	text-align: center;
 }
@@ -748,7 +752,7 @@ opacity:1;
 	padding-bottom: 350px;
 }
 .sports_mobile_column2{
-	background-color:rgba(24,24,24,0.5);
+	background-color:rgba(24,24,24,0.3);
 	color:white;
 	text-align: center;
 }
@@ -847,8 +851,16 @@ canvas {
 	padding-top: 70px;
 }
 .tech_set_modal{
-	margin-top:3%;
-	font-family: 'Raleway';
+	font-family: 'Raleway-ExtraLight';
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}
+.modal:before {
+	display: inline-block;
+	vertical-align: middle;
+	content: " ";
+	height: 100%;
 }
 .tech_set_modal .modal-content{
 	background: rgba(255,255,255,0.85);
@@ -876,6 +888,7 @@ canvas {
 .tech_set_modal .modal-body .row div:first-child{
 	height:280px;
 	width:400px;
+	border-radius:2%;
 	-webkit-box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.75);
