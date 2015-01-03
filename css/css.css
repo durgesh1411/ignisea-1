@@ -1277,16 +1277,18 @@ canvas {
 	font-size: 7em;
 	text-align: left;
 	color: #5F5C5C;
-	font-family: 'Raleway'
+	font-family: 'Raleway';
+	padding-top: 38px;
+	padding-left: 15px;
 }
 .inner_text
 {
 	font-size: 2.2em;
 	
-	padding-top: 60px;
-	color: black
-	padding-left: 1000px !important;
-	margin-left: 1000px;
+	padding-top: 100px;
+	color: black;
+	padding-left: 1000px ;
+	
 }
 .side1_inner_text
 {
@@ -1310,18 +1312,68 @@ background-repeat: no-repeat;
 background-position: center;
 
 
-height: 600px;
+height: 635px;
 }
-.tile1
-{
-	height: 580px;
-	background-image: url('../images/music.jpg');
-	background-repeat: no-repeat;
-background-position: center;
-}
+
 .side{
-	margin-top: -265px;
+	margin-top: -180px;
 	text-align: left;
+	padding-left: 40px;
+}
+.tile2
+{
+background-image: url('../images/bands.jpg') ;
+background-repeat: no-repeat;
+background-position: center;
+height: 635px;
+
+}
+.tile3
+{
+background-image: url('../images/CNC.png') ;
+background-repeat: no-repeat;
+background-position: center;
+height: 635px;
+
+}
+.heading2
+{
+	padding-top: 40px;
+	font-size: 7em;
+	text-align: left;
+	color: white;
+	font-family: 'Raleway';
+}
+.heading3
+{
+	padding-top: 40px;
+	font-size: 3.6em;
+	text-align: left;
+	color: black;
+	font-family: 'Raleway';
+	padding-left: 40px;
+	font-weight: bolder;
+}
+.inner_text_tile2
+{
+	font-size: 2.2em;
+	
+	padding-top: 250px;
+	color: #D9E1E4;
+	
+	margin-left: 700px;
+}
+.side2
+{
+	margin-top: -280px;
+	text-align: left;
+	padding-left: 40px;
+
+}
+.side_text_tile2
+{
+	font-size: 2em;
+	color: #D9E1E4;
 }
 /* HTML5 display-role reset for older browsers */
 
