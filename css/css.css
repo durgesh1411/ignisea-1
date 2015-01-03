@@ -1239,7 +1239,7 @@ canvas {
 
 
 .cultural_body{
-	background: url("../images/b2.jpg") repeat scroll 0% 0% ;
+	background: url("../images/cultural.jpg") repeat scroll 0% 0% ;
 	width: 100%; 
 	
 }
@@ -1255,7 +1255,8 @@ canvas {
 .cultural_title_container{
 	padding-top: 190px;
 	padding-bottom: 120px;
-	background-color: rgba(255,255,255,0.7);
+	height: 650px;
+	background-color: rgba(255,255,255,0.3);
 }
 
 
@@ -1263,7 +1264,7 @@ canvas {
 .title
 {
 	position: absolute;
-	top: 2.6em;
+	top: 2.4em;
 	color: #305559;
 	font-size: 7.5em;
 	font-weight: bold;
@@ -1271,28 +1272,34 @@ canvas {
 	padding-left: 160px;
 	font-family: 'Raleway'
 }
-
 .content1
 {
  font-size: 1.5em;   
 }
 .heading
 {
-	font-size: 2em;
+	font-size: 7em;
+	text-align: left;
+	color: #5F5C5C;
+	font-family: 'Raleway'
 }
 .inner_text
 {
-	font-size: 1.2em;
-	text-align: justify;
+	font-size: 2.2em;
+	
+	padding-top: 60px;
+	color: black
+	padding-left: 1000px !important;
+	margin-left: 1000px;
 }
 .side1_inner_text
 {
 	color: #2288B7;
-	font-size: 2.5em;
+	font-size: 2em;
 }
 .side_text
 {
-  font-size: 1.8em;
+  font-size: 2em;
  
 }
 .link
@@ -1300,7 +1307,26 @@ canvas {
   color: red !important;
   font-size: 2em !important;
 }
+.change
+{
+background-image: url('../images/d.jpg') ;
+background-repeat: no-repeat;
+background-position: center;
 
+
+height: 600px;
+}
+.tile1
+{
+	height: 580px;
+	background-image: url('../images/music.jpg');
+	background-repeat: no-repeat;
+background-position: center;
+}
+.side{
+	margin-top: -265px;
+	text-align: left;
+}
 /* HTML5 display-role reset for older browsers */
 
 Primary style
@@ -1521,10 +1547,10 @@ Main components
 .cd-timeline-content {
   position: relative;
   margin-left: 60px;
-  background: white;
+ 
   border-radius: 0.25em;
   padding: 1em;
-  box-shadow: 0 3px 0 #d7e4ed;
+  
   
 }
 
@@ -1552,12 +1578,11 @@ Main components
   float: right;
   padding: .8em 1em;
   background: #acb7c0;
-  color: white;
+ 
   border-radius: 0.25em;
 }
 .no-touch .cd-timeline-content .cd-read-more:hover {
-  background-color: #bac4cb;
-}
+  
 .cd-timeline-content .cd-date {
   float: left;
   padding: .8em 0;
@@ -1571,7 +1596,7 @@ Main components
   height: 0;
   width: 0;
   border: 7px solid transparent;
-  border-right: 7px solid white;
+  border-right: 7px solid;
 }
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
@@ -1597,7 +1622,7 @@ Main components
     top: 24px;
     left: 100%;
     border-color: transparent;
-    border-left-color: white;
+    /*border-left-color: white;*/
   }
   .cd-timeline-content .cd-read-more {
     float: left;
@@ -1618,7 +1643,7 @@ Main components
     left: auto;
     right: 100%;
     border-color: transparent;
-    border-right-color: white;
+    /*border-right-color: white;*/
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
     float: right;
