@@ -1287,9 +1287,12 @@ canvas {
 	padding-left: 100px;
 	font-family: 'Raleway-ExtraLight';
 }
-.content1
+.tile1
 {
- font-size: 1.5em;   
+background-image: url('../images/d.jpg') ;
+background-repeat: no-repeat;
+background-position: center;
+height: 635px;
 }
 .tile2
 {
@@ -1297,7 +1300,6 @@ background-image: url('../images/music3.jpg') ;
 background-repeat: no-repeat;
 background-position: center;
 height: 635px;
-
 }
 .tile3
 {
@@ -1305,11 +1307,10 @@ background-image: url('../images/mask.jpg') ;
 background-repeat: no-repeat;
 background-position: center;
 height: 635px;
-
 }
 .tile4
 {
-background-image: url('../images/musicc.jpg') ;
+background-image: url('../images/guitar.jpg') ;
 background-repeat: no-repeat;
 background-position: center;
 height: 635px;	
@@ -1341,7 +1342,7 @@ height: 635px;
 }
 .heading3
 {
-	padding-top: 40px;
+	padding-top: 30px;
 	font-size: 7em;
 	text-align: left;
 	color: #E4CD56;
@@ -1354,8 +1355,17 @@ height: 635px;
 	padding-top: 40px;
 	font-size: 7em;
 	text-align: left;
-	color: #E4303D;
+	color: white;
 	font-family: 'Raleway-ExtraLight';
+}
+.heading4_2
+{
+	padding-top: -15px;
+	font-size: 7em;
+	text-align: left;
+	color: white;
+	font-family: 'Raleway-ExtraLight';
+	padding-left: 50px;
 }
 .heading5
 {
@@ -1399,9 +1409,10 @@ height: 635px;
 	font-size: 1.8em;
 	font-family: 'Raleway-ExtraLight';
 	/*padding-top: 20px;*/
-	color:  #E4303D;
-	padding-left: 340px;
-	margin-top: 360px;
+	color:  black;
+	padding-left: 1000px;
+	margin-top: -260px;
+	font-weight: 600;
 }
 .inner_text_tile5
 {
@@ -1421,6 +1432,12 @@ height: 635px;
 .side1_inner_text_tile2
 {
 	color: #2288B7;
+	font-size: 1.8em;
+	font-family: 'Raleway-ExtraLight';
+}
+.side1_inner_text_tile4
+{
+	color: red;
 	font-size: 1.8em;
 	font-family: 'Raleway-ExtraLight';
 }
@@ -1445,7 +1462,7 @@ font-size: 1.8em;
 {
 font-size: 1.8em;
   font-family: 'Raleway-ExtraLight';
-  color:  #E4303D;	
+  color:  black;	
 }
 .side_text_tile5
 {
@@ -1456,21 +1473,24 @@ font-size: 1.8em;
 .link
 {
   color: red !important;
-  font-size: 2em !important;
+  font-size: 3em !important;
   font-family: 'Raleway-ExtraLight';
+  font-weight: 800;
 }
-.change
+.link_tile5
 {
-background-image: url('../images/d.jpg') ;
-background-repeat: no-repeat;
-background-position: center;
-
-
-height: 635px;
+ color: red !important;
+  font-size: 3em !important;
+  font-family: 'Raleway-ExtraLight';
+  font-weight: 800;	
+  font-weight: bolder;
+  margin-top: -150px;
+  padding-left: 80px;
 }
+
 
 .side{
-	margin-top: -180px;
+	margin-top: -190px;
 	text-align: left;
 	padding-left: 40px;
 	font-family: 'Raleway-ExtraLight';
@@ -1484,7 +1504,7 @@ height: 635px;
 	/*margin-top: -80px;*/
 	text-align: left;
 	padding-left: 40px;
-	padding-top: 10px;
+	padding-top: -10px;
 	font-family: 'Raleway-ExtraLight';
 	font-weight: 400;
 
@@ -1500,11 +1520,11 @@ height: 635px;
 }
 .side4
 {
-	text-align: left;
-	padding-left: 40px;
-	margin-top: -400px;
+	
+	padding-left: 1060px;
+	/*margin-top: -400px;*/
 	font-family: 'Raleway-ExtraLight';
-	font-weight: 400;
+	font-weight: 800;
 
 }
 .side5{
