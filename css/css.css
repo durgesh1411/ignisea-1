@@ -1686,7 +1686,7 @@ Main components
   }
 }
 
-#cd-timeline {
+#cd-x-fast {
   position: relative;
   padding: 2em 0;
   margin-top: 2em;
@@ -2097,3 +2097,551 @@ Main components
 }
 
 /*===========================Cultural Events Page CSS Ends================================================*/
+/*===========================timeline Page CSS starts================================================*/
+
+.bodyTimeline{
+background-color:#666362;
+color:#fff;
+opacity:0.9;
+}
+
+.page-header > h1{
+font-family: 'Frijole', cursive;
+}
+
+h3.timeline-title{
+font-family:'Permanent marker', cursive;
+font-size:30px;
+}
+
+small.text-muted {
+font-family:'Ubuntu',cursive;
+color:#fff;
+}
+
+input + button{
+font-family: 'Freckle Face', cursive;
+font-size:20px;
+border:2px solid #666362;
+border-bottom-left-radius:20px;
+border-top-right-radius:20px;
+-webkit-box-shadow:-20px 15px 100px rgba(255,255,255, 0.3);
+box-shadow:-20px 15px 100px rgba(255,255,255, 0.3);
+background-color:rgba(0,0,0,0.4);
+}
+
+.day_number{
+text-align:center;
+}
+
+
+ul{
+list-style:none;
+}
+
+.timeline{
+padding:20px 0px 20px 0px;
+position:relative;
+}
+
+.timeline.day1:before,.timeline.day2:before,.timeline.day3:before {
+top:0;
+bottom:0;
+position:absolute;
+width:3px;
+left:50%;
+background-color:black;
+content:"";
+margin-left:-1.5px;
+opacity:0.5;
+}
+
+
+.timeline > li > div > .timeline_time{
+font-size:20px;
+background-color:#ccc;
+color:#fff;
+font-family:comic sans ms ;
+text-align:center;
+position:relative;
+height:70px;
+width:70px;
+left:50%;
+line-height:70px;
+border-radius:50px;
+border-top-left-radius:0px;
+border-bottom-right-radius:0px;
+margin-left:-35px;
+z-index:100;
+background-color:#34282C;
+-webkit-box-shadow:;
+box-shadow:-5px 5px 100px rgba(255,255,255,0.4);
+}
+.timeline >li {
+	display:block;
+}
+.timeline >li:after{
+clear:both;
+}
+
+.timeline > li > div > .timeline-panel {
+border:1px solid #666362;
+border-top-left-radius:40px;
+border-bottom-right-radius:40px;
+position:relative;
+width:40%;
+margin-top:-50px;
+padding-left:20px;
+left:4%;
+-webkit-box-shadow: -20px 10px 100px rgba(255,255, 255, 0.4);
+box-shadow: -20px 10px 100px rgba(255,255,255, 0.4);
+background-color:#504a4b;
+}
+
+.timeline-heading{
+padding-left:30px;
+}
+
+.timeline > li > div > .timeline-inverted {
+border-radius:0px;
+border-top-right-radius:50px;
+border-bottom-left-radius:50px;
+position:relative;
+left:56%;
+margin-bottom:30px;
+margin-top:-83px;
+-webkit-box-shadow: 20px 10px 100px rgba(255,255,255, 0.4);
+box-shadow: 20px 10px 100px rgba(255,255,255, 0.4);
+}
+
+.timeline > li > div > .timeline-panel.one{
+margin-bottom:40px;
+}
+
+.timeline > li > div > .timeline-panel.timeline-inverted.one {
+margin-top:-50px ;
+}
+
+.timeline > li > div > .four {
+margin-top :-165px;
+} 
+
+
+.timeline-title{
+text-align:center;
+margin-left:-50px;
+}
+
+.container > .day1 {
+position:relative;
+}
+
+.container > .day2 {
+
+position:relative;
+top:-600px;
+left:110%;
+}
+
+.container > .day3 {
+position:relative;
+top:-1200px;
+left:110%;
+}
+
+div.container {
+height:1000px;
+width:100%;
+overflow:hidden;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance:checkbox;
+  appearance: none;
+  position: relative;
+  top: 13.33333px;
+  width: 80px;
+  height: 40px; 
+  border: 0px;
+  cursor: pointer;
+  display: inline-block;
+  opacity:0;
+  z-index: 100;  
+
+}
+
+input#day1{
+margin-left:10%;
+}
+
+input + button{
+margin-left:-80px;
+height:40px;
+width:80px;
+}
+
+input[type="radio"]:hover + button{
+background-color:rgba(0,0,0,0.8);
+}
+
+input[type="radio"]:checked + button{
+background-color:rgba(0,0,0,0);
+}
+
+@media (max-width:767px){
+.timeline > li > div > .timeline-panel {
+left:0%;
+}
+.timeline > li > div > .timeline-inverted {
+left:60%;
+}
+h3.timeline-title{
+
+font-size:22px;
+}
+
+.container > .day2 {
+top:-500px;
+}
+
+.container > .day3 {
+top:-1000px;
+}
+}
+@media (max-width:650px){
+
+h3{
+font-family: 'Open Sans', sans-serif;
+font-size:30px;
+}
+
+
+input[type="radio"]#day1 {
+margin-left:10%;
+}
+
+.timeline.day1:before,.timeline.day2:before,.timeline.day3:before {
+left:40px;
+
+}
+
+div.container{
+height:1200px;
+}
+.timeline > li > div > .timeline_time {
+left:40px;
+}
+.timeline > li > div {
+margin-bottom:80px;
+}
+
+.timeline > li > div > .timeline-panel{
+left:100px;
+width:70%;
+border-radius:0px;
+border-top-right-radius:40px;
+}
+
+.timeline > li > div > .timeline-inverted{
+left:100px;
+position:relative;
+top:85px;
+border-radius:0px;
+border-bottom-left-radius:40px;
+}
+
+.timeline > li > div > .timeline-panel.one{
+border-bottom-left-radius:40px;
+margin-bottom:-80px;
+}
+
+
+.timeline > li > div > .timeline-panel.timeline-inverted.one {
+margin-top:-130px ;
+margin-bottom:0px;
+border-top-right-radius:40px;
+}
+
+.timeline > li > div > .four {
+top:185px;
+}
+
+
+.container > .day2 {
+top:-630px;
+}
+
+.container > .day3 {
+top:-1260px;
+}
+}
+
+
+
+input[type="radio"]#day1:checked ~ ul.day1 , input[type="radio"]#day2:checked ~ ul.day2 ,input[type="radio"]#day3:checked ~ ul.day3{
+visibility:visible;
+-webkit-animation: entry 2s ease-out; /* Chrome, Safari, Opera */
+animation: entry 2s ease-out;
+left:0%;
+}
+
+input[type="radio"]#day1:checked ~ ul.day2,input[type="radio"]#day1:checked ~ ul.day3,input[type="radio"]#day2:checked ~ ul.day1,input[type="radio"]#day2:checked ~ ul.day3,input[type="radio"]#day3:checked ~ ul.day1,input[type="radio"]#day3:checked ~ ul.day2{
+-webkit-animation: exit 1s linear;
+animation:exit 1s linear;
+left:110%;
+}
+
+
+@-webkit-keyframes entry {
+    from {	
+			left: 110%;
+			visibility:hidden;
+		}
+	to {	left: 0%;
+			visibility:visible;
+		}
+}
+
+/* Standard syntax */
+@keyframes entry {
+    from {
+			left:110%;
+			visibility:hidden;}
+    to {
+			left: 0%;
+			visibility:visible;
+		}
+}
+
+@-webkit-keyframes exit {
+    from {
+			left: 0%;
+			visibility:visible;
+		}
+    to {
+		left: -110%;
+		visibility:hidden;
+		
+		}
+	
+}
+
+/* Standard syntax */
+@keyframes exit {
+    from {
+			left:0%;
+			visibility:visible;
+			
+		}
+    to {
+			left: -110%;
+			visibility:hidden;
+			
+		}
+	
+}
+
+
+
+
+	
+	
+	.timeline-panel.is-hidden , .timeline > li > div > .timeline_time.is-hidden {
+    visibility: hidden;
+  }
+  .timeline-panel.bounce-in {
+    visibility: visible;
+    -webkit-animation: cd-bounce-2-inverse 0.6s;
+    -moz-animation: cd-bounce-2 0.6s;
+    animation: cd-bounce-2 0.6s;
+  }
+  
+  .timeline-panel.inverted.bounce-in {
+    visibility: visible;
+    -webkit-animation: cd-bounce-2-inverse 0.6s;
+    -moz-animation: cd-bounce-2-inverse 0.6s;
+    animation: cd-bounce-2-inverse 0.6s;
+  }
+
+
+.timeline > li > div > .timeline_time.bounce-in {
+    visibility: visible;
+    -webkit-animation: cd-bounce-1 0.6s;
+    -moz-animation: cd-bounce-1 0.6s;
+    animation: cd-bounce-1 0.6s;
+  }
+
+@-webkit-keyframes cd-bounce-2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(20px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes cd-bounce-2 {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-100px);
+  }
+
+  60% {
+    opacity: 1;
+    -moz-transform: translateX(20px);
+  }
+
+  100% {
+    -moz-transform: translateX(0);
+  }
+}
+@keyframes cd-bounce-2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    -o-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes cd-bounce-2-inverse {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(-20px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes cd-bounce-2-inverse {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(100px);
+  }
+
+  60% {
+    opacity: 1;
+    -moz-transform: translateX(-20px);
+  }
+
+  100% {
+    -moz-transform: translateX(0);
+  }
+}
+@keyframes cd-bounce-2-inverse {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+    -moz-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    -o-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    -o-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes cd-bounce-1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+@-moz-keyframes cd-bounce-1 {
+  0% {
+    opacity: 0;
+    -moz-transform: scale(0.5);
+  }
+
+  60% {
+    opacity: 1;
+    -moz-transform: scale(1.2);
+  }
+
+  100% {
+    -moz-transform: scale(1);
+  }
+}
+@keyframes cd-bounce-1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/*===========================timeline Page CSS Ends================================================*/

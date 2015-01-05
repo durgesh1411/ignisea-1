@@ -6,12 +6,78 @@
 		</title>
 		
 		<link rel = "stylesheet" type = "text/css" href = "css/bootstrap.min.css" />
-		<link rel = "stylesheet" type = "text/css" href = "css/style.css" />
+		<link rel = "stylesheet" type = "text/css" href = "css/css.css" />
 <link href='http://fonts.googleapis.com/css?family=Ubuntu:300|Open+Sans|Titillium+Web:300' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Permanent+Marker|Cabin+Sketch|Frijole|Nothing+You+Could+Do|Freckle+Face' rel='stylesheet' type='text/css'>		
+<link href='http://fonts.googleapis.com/css?family=Permanent+Marker|Cabin+Sketch|Frijole|Nothing+You+Could+Do|Freckle+Face' rel='stylesheet' type='text/css'>	
+
+<script src="js/jquery.min.js"></script>	
+<script src="js/timeline.js"></script>	
 		</head>
 	
-	<body>
+	<body class="bodyTimeline">
+	<nav class="navbar navbar-inverse navbar-fixed-top main_nav_colour" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Grandiose</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Workshops</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Events <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Technical</a>
+								</li>
+								<li><a href="#">Cultural</a>
+								</li>
+								<li><a href="#">Literary</a>
+								</li>
+								<li><a href="#">Sports</a>
+								</li>
+								<li><a href="#">Fun</a>
+								</li>
+							</ul>
+						</li>
+						<li><a href="#">Lectures</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Exhibitions <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Exhibition 1</a>
+								</li>
+								<li><a href="#">Exhibition 2</a>
+								</li>
+								<li><a href="#">Exhibition 3</a>
+								</li>
+							</ul>
+						</li>
+						<li><a href="#">Gallery</a>
+						</li>
+						<li><a href="#">Contact us</a>
+						</li>
+						<li><a href="#">Registrations</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+		<br>
 		<div class = "container">
 			<div class="page-header">
 				<h1>Full Schedule </h1>
@@ -27,13 +93,13 @@
 		
 			   <br/>
 			<ul class = "timeline day1 ">
-				<li>
+				<li class="cd-timeline-block">
 					<div><div class = "timeline_time">9:00</div>
 						<div class = "timeline-panel ">
 						
 								<div class="timeline-heading ">
-									<h3 class="timeline-title">Bootstrap released</h3>
-						
+									<h3 class="timeline-title">CRYPTOGRAPHY</h3>
+										
 										<small class="text-muted"><i class="glyphicon glyphicon-map-marker"></i> Venue</small>
 										<small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> Date </small>
 									
@@ -42,8 +108,8 @@
 						</div>
 						<div class = "timeline-inverted timeline-panel ">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Bootstrap released</h3>
-									
+									<h3 class="timeline-title">BOOLEAN EVENT</h3>
+									&nbsp;&nbsp;&nbsp;&nbsp;
 										<small class="text-muted"><i class="glyphicon glyphicon-map-marker"></i> Venue</small>
 										<small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> Date </small>
 									
@@ -53,22 +119,12 @@
 					</div>
 
 				</li>
-				<li><div ><div class = "timeline_time">10:00</div>
-						<div class = "timeline-panel ">
+				<li class="cd-timeline-block"><div ><div class = "timeline_time">10:00</div>
 						
+						<div class = "timeline-inverted one timeline-panel  ">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Bootstrap released</h3>
-									
-										<small class="text-muted"><i class="glyphicon glyphicon-map-marker"></i> Venue</small>
-										<small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> Date </small>
-									
-								</div>
-							
-						</div>
-						<div class = "timeline-inverted timeline-panel ">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Bootstrap released</h3>
-									
+									<h3 class="timeline-title">INNOVATIVE MINDS</h3>
+									&nbsp;&nbsp;&nbsp;&nbsp;
 										<small class="text-muted"><i class="glyphicon glyphicon-map-marker"></i> Venue</small>
 										<small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> Date </small>
 									
@@ -79,11 +135,11 @@
 					</div>
 
 				</li>
-				<li><div ><div class = "timeline_time">11:00</div>
+				<li class="cd-timeline-block"><div ><div class = "timeline_time">11:00</div>
 						<div class = "timeline-panel ">
 						
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Bootstrap released</h3>
+									<h3 class="timeline-title">CODE OVERNIGHT</h3>
 									
 										<small class="text-muted"><i class="glyphicon glyphicon-map-marker"></i> Venue</small>
 										<small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> Date </small>
@@ -93,8 +149,8 @@
 						</div>
 						<div class = "timeline-inverted timeline-panel ">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Bootstrap released</h3>
-									
+									<h3 class="timeline-title">WEB DESIGNING</h3>
+									&nbsp;&nbsp;&nbsp;&nbsp;
 										<small class="text-muted"><i class="glyphicon glyphicon-map-marker"></i> Venue</small>
 										<small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> Date </small>
 									
@@ -104,11 +160,11 @@
 					</div>
 
 				</li>
-				<li><div ><div class = "timeline_time">12:00</div>
+				<li class="cd-timeline-block"><div ><div class = "timeline_time">12:00</div>
 						<div class = "timeline-panel ">
 						
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Bootstrap released</h3>
+									<h3 class="timeline-title">CODE DEBUGGING</h3>
 									
 										<small class="text-muted"><i class="glyphicon glyphicon-map-marker"></i> Venue</small>
 										<small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> Date </small>
@@ -116,7 +172,7 @@
 								</div>
 								
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Bootstrap released</h3>
+									<h3 class="timeline-title">CONTRAPTION</h3>
 									
 										<small class="text-muted"><i class="glyphicon glyphicon-map-marker"></i> Venue</small>
 										<small class="text-muted"><i class="glyphicon glyphicon-calendar"></i>Date</small>
@@ -126,8 +182,8 @@
 						</div>
 						<div class = "timeline-inverted timeline-panel four ">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Bootstrap released</h3>
-									
+									<h3 class="timeline-title">DARK HORSE</h3>
+									&nbsp;&nbsp;&nbsp;&nbsp;
 										<small class="text-muted"><i class="glyphicon glyphicon-map-marker"></i> Venue</small>
 										<small class="text-muted"><i class="glyphicon glyphicon-calendar"></i>Date</small>
 									
@@ -141,12 +197,12 @@
 			</ul>
 			
 			<ul class = "timeline day2">
-				<li>
+				<li class="cd-timeline-block">
 					<div><div class = "timeline_time">9:00</div>
 						<div class = "timeline-panel">
 						
 								<div class="timeline-heading">
-									<h3 class="timeline-title">trap released</h3>
+									<h3 class="timeline-title">GANDOR</h3>
 						
 										<small class="text-muted"><i class="glyphicon glyphicon-map-marker"></i> Venue</small>
 										<small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> Date </small>
@@ -156,8 +212,8 @@
 						</div>
 						<div class = "timeline-inverted timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Bootstrap released</h3>
-									
+									<h3 class="timeline-title">I-M-PEDANCE</h3>
+									&nbsp;&nbsp;&nbsp;&nbsp;
 										<small class="text-muted"><i class="glyphicon glyphicon-map-marker"></i> Venue</small>
 										<small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> Date </small>
 									
@@ -167,11 +223,12 @@
 					</div>
 
 				</li>
-				<li><div ><div class = "timeline_time">10:00</div>
-						<div class = "timeline-panel">
+				<li class="cd-timeline-block">
+					<div ><div class = "timeline_time one">10:00</div>
+						<div class = "timeline-panel one">
 						
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Bootstrap released</h3>
+									<h3 class="timeline-title">CIRCUUIT KITCHEN</h3>
 									
 										<small class="text-muted"><i class="glyphicon glyphicon-map-marker"></i> Venue</small>
 										<small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> Date </small>
@@ -179,24 +236,15 @@
 								</div>
 							
 						</div>
-						<div class = "timeline-inverted timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Bootstrap released</h3>
-									
-										<small class="text-muted"><i class="glyphicon glyphicon-map-marker"></i> Venue</small>
-										<small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> Date </small>
-									
-								</div>
-							
-						</div>
+						
 					</div>
 
 				</li>
-				<li><div ><div class = "timeline_time">11:00</div>
+				<li class="cd-timeline-block"><div ><div class = "timeline_time">11:00</div>
 						<div class = "timeline-panel">
 						
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Bootstrap released</h3>
+									<h3 class="timeline-title">HOLD YOUR NERVES</h3>
 									
 										<small class="text-muted"><i class="glyphicon glyphicon-map-marker"></i> Venue</small>
 										<small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> Date </small>
@@ -206,8 +254,8 @@
 						</div>
 						<div class = "timeline-inverted timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Bootstrap released</h3>
-									
+									<h3 class="timeline-title">BOAT RACE</h3>
+									&nbsp;&nbsp;&nbsp;&nbsp;
 										<small class="text-muted"><i class="glyphicon glyphicon-map-marker"></i> Venue</small>
 										<small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> Date </small>
 									
@@ -217,19 +265,19 @@
 					</div>
 
 				</li>
-				<li><div ><div class = "timeline_time">12:00</div>
+				<li class="cd-timeline-block"><div ><div class = "timeline_time">12:00</div>
 						<div class = "timeline-panel">
 						
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Bootstrap released</h3>
+									<h3 class="timeline-title">ANDROID WORKSHOP</h3>
 									
 										<small class="text-muted"><i class="glyphicon glyphicon-map-marker"></i> Venue</small>
 										<small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> Date </small>
 									
 								</div>
-								<hr>
+								
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Bootstrap released</h3>
+									<h3 class="timeline-title">LINUX WORKSHOP</h3>
 									
 										<small class="text-muted"><i class="glyphicon glyphicon-map-marker"></i> Venue</small>
 										<small class="text-muted"><i class="glyphicon glyphicon-calendar"></i>Date</small>
@@ -239,8 +287,8 @@
 						</div>
 						<div class = "timeline-inverted timeline-panel four">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Bootstrap released</h3>
-									
+									<h3 class="timeline-title">Game Development</h3>
+									&nbsp;&nbsp;&nbsp;&nbsp;
 										<small class="text-muted"><i class="glyphicon glyphicon-map-marker"></i> Venue</small>
 										<small class="text-muted"><i class="glyphicon glyphicon-calendar"></i>Date</small>
 									
@@ -254,12 +302,12 @@
 			</ul>
 			
 			<ul class = "timeline day3">
-				<li>
+				<li class="cd-timeline-block">
 					<div><div class = "timeline_time">9:00</div>
 						<div class = "timeline-panel">
 						
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Borap released</h3>
+									<h3 class="timeline-title">boolean</h3>
 						
 										<small class="text-muted"><i class="glyphicon glyphicon-map-marker"></i> Venue</small>
 										<small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> Date </small>
@@ -269,8 +317,8 @@
 						</div>
 						<div class = "timeline-inverted timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Bootstrap released</h3>
-									
+									<h3 class="timeline-title">clash of titans (war of bands)</h3>
+									&nbsp;&nbsp;&nbsp;&nbsp;
 										<small class="text-muted"><i class="glyphicon glyphicon-map-marker"></i> Venue</small>
 										<small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> Date </small>
 									
@@ -280,12 +328,12 @@
 					</div>
 
 				</li>
-				<li><div ><div class = "timeline_time">10:00</div>
+				<li class="cd-timeline-block"><div ><div class = "timeline_time">10:00</div>
 						<div class = "timeline-panel">
 						
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Bootstrap released</h3>
-									
+									<h3 class="timeline-title">taal se taal mila</h3>
+							
 										<small class="text-muted"><i class="glyphicon glyphicon-map-marker"></i> Venue</small>
 										<small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> Date </small>
 									
@@ -294,8 +342,8 @@
 						</div>
 						<div class = "timeline-inverted timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Bootstrap released</h3>
-									
+									<h3 class="timeline-title">set up (dance to tune)</h3>
+									&nbsp;&nbsp;&nbsp;&nbsp;
 										<small class="text-muted"><i class="glyphicon glyphicon-map-marker"></i> Venue</small>
 										<small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> Date </small>
 									
@@ -305,11 +353,11 @@
 					</div>
 
 				</li>
-				<li><div ><div class = "timeline_time">11:00</div>
+				<li class="cd-timeline-block"><div ><div class = "timeline_time">11:00</div>
 						<div class = "timeline-panel">
 						
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Bootstrap released</h3>
+									<h3 class="timeline-title">mukhota(dramebaji)</h3>
 									
 										<small class="text-muted"><i class="glyphicon glyphicon-map-marker"></i> Venue</small>
 										<small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> Date </small>
@@ -319,8 +367,8 @@
 						</div>
 						<div class = "timeline-inverted timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Bootstrap released</h3>
-									
+									<h3 class="timeline-title">musicana(singing)</h3>
+									&nbsp;&nbsp;&nbsp;&nbsp;
 										<small class="text-muted"><i class="glyphicon glyphicon-map-marker"></i> Venue</small>
 										<small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> Date </small>
 									
@@ -330,7 +378,7 @@
 					</div>
 
 				</li>
-				<li><div ><div class = "timeline_time">12:00</div>
+				<li class="cd-timeline-block"><div ><div class = "timeline_time">12:00</div>
 						<div class = "timeline-panel">
 						
 								<div class="timeline-heading">
@@ -340,7 +388,7 @@
 										<small class="text-muted"><i class="glyphicon glyphicon-calendar"></i> Date </small>
 									
 								</div>
-								<hr>
+								
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Bootstrap released</h3>
 									
@@ -352,7 +400,8 @@
 						</div>
 						<div class = "timeline-inverted timeline-panel four">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Bootstrap released</h3>							
+									<h3 class="timeline-title">Bootstrap released</h3>	
+									&nbsp;&nbsp;&nbsp;&nbsp;									
 										<small class="text-muted"><i class="glyphicon glyphicon-map-marker"></i> Venue</small>
 										<small class="text-muted"><i class="glyphicon glyphicon-calendar"></i>Date</small>
 									
