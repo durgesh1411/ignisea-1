@@ -6,7 +6,7 @@ c.height = window.innerHeight;
 c.width = window.innerWidth;
 
 //chinese characters - taken from the unicode charset
-var chinese = "田由甲申甴电甶男甸甹町画甼甽甾甿畀畁畂畃畄畅畆畇畈畉畊畋界畍畎畏畐畑";
+var chinese = "1010000010100101000111100010100101010011000011";
 //converting the string into an array of single characters
 chinese = chinese.split("");
 
@@ -24,7 +24,7 @@ function draw()
 {
 	//Black BG for the canvas
 	//translucent BG to show trail
-	ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+	ctx.fillStyle = "rgba(110,110,110,0.12)";
 	ctx.fillRect(0, 0, c.width, c.height);
 	
 	ctx.fillStyle = "#0F0"; //green text
@@ -47,7 +47,8 @@ function draw()
 	}
 }
 
-setInterval(draw, 33);
+setInterval(draw, 80);
+
 
 
 
