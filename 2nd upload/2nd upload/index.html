@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Grandiose</title>
+		<link rel="stylesheet" type="text/css" href="css/css.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.transit.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(".back").hide();
+				$(".tile_2").mouseenter(function(){
+					$(this).children(".front").transit({
+						"rotateX":"90deg"
+					},300,"easeInCirc",function(){
+						var back;
+						$(this).hide();
+						back=$(this).siblings(".back");
+						back.css({
+							"rotateX":"-90deg"
+						});
+						back.show();
+						back.transit({
+							"rotateX":"0deg"
+						},300,"easeOutCirc");
+					});
+				});
+
+				$(".tile_2").mouseleave(function(){
+					$(this).children(".back").transit({
+						"rotateX":"90deg"
+					},300,"easeInCirc",function(){
+						var front;
+						$(this).hide();
+						front=$(this).siblings(".front");
+						front.css({
+							"rotateX":"-90deg"
+
+						})
+						front.show();
+						front.transit({
+							"rotateX":"0deg"
+						},300,"easeInCirc");
+					});
+				});
+				
+		
+		
+				
+			});
+		</script>
+
+			<style>
+				@media (max-width: 855px) {
+					
+					.s{
+						font-size:25px;
+					
+					}
+
+				}
+				@media(max-width:799px){
+					.lets{
+						padding:20px 28px !important;
+					}
+				}
+				@media(max-width:767px){
+					.lets{
+						padding:20px 48px !important;
+					}
+				}
+				@media (max-width: 767px) {
+					
+					.tile_3{
+						margin-top:5px;
+						text-align: left!important;
+					
+					}
+				}
+				@media (max-width: 829px) {
+					
+					.tile_3{
+						padding-left:0px !important;
+					
+					}
+				}
+				@media (max-width: 767px) {
+					
+					.s{
+						font-size:17px;
+					
+					}
+					.tile_1{
+					margin-top:5px;
+					}
+				}
+				@media (max-width: 644px) {
+					
+					.last{
+						margin-left:90px;
+					
+					}
+					.row1-text{
+						font-size:15px;
+					}
+
+				}
+				@media(max-width:445px){
+					.last{
+						margin-left:0px;
+					}
+					#word{
+						font-size:32px;
+					}
+					#overlay{
+						padding:164px 0px 120px;
+					}
+					.icon-size_2{
+						font-size: 67px;
+					}
+					.front{
+						font-size:24px !important;
+					}
+					.media_text{
+						font-size: 22px !important;
+					}
+					.media_text_2{
+						font-size: 14px !important;
+					}
+					.tile_3{
+						margin-top: 2px;
+					}
+					.spon_text{
+						font-size: 11px !important;
+					}
+							
+				}
+				@media(max-width:335px){
+					.large_size{
+						font-size: 38px;
+					}
+					.spacing_footer{
+						font-size:12px !important;
+					}
+					
+				}
+				@media(max-width:384px){
+					.small{
+						font-size: 25px !important;
+					}
+					
+				}
+				@media(max-width:259px){
+					.small{
+						font-size: 21px !important;
+					}
+					.spacing_footer{
+						font-size:9px !important;
+					}
+					
+				}
+				@media(max-width:300px){
+					.spon_text{
+						width:60px;
+					}
+					
+				}
+				@media(max-width:1199px){
+						.copyright_color_1{
+						border-right:0px !important;
+					}
+				}
+				@media(max-width:988px){
+						#word{
+						font-size:22px !important;
+					}
+					#overlay{
+						padding:180px 0px 120px;
+					}
+				}
+
+			</style>
+		
+		
+		
+	</head>		
+	<body class="cover">
+		<!--navbar starts here
+		 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+				<div class="navbar-header">
+	    			<a class="navbar-brand" href="#">Ignisea</a>
+	  			</div>
+
+	  			<ul class="nav navbar-nav navbar-right">
+	      			<li><a href="#">Exhibitions</a></li>
+	      			<li><a href="#">Workshops</a></li>
+	      			<li><a href="#">Lectures</a></li>
+	      			<li class="dropdown">
+	        			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Events <b class="caret"></b></a>
+	        			<ul class="dropdown-menu">
+	          				<li><a href="#">Technical</a></li>
+	          				<li class="divider"></li>
+	          				<li><a href="#">Literary</a></li>
+	          				<li class="divider"></li>
+	          				<li><a href="#">Fun</a></li>
+	        			</ul>
+	      			</li>
+	    		</ul>
+			</nav><!--navbar ends
+			<div class="accordian">
+				<ul>
+					<li>
+						<span class="image_title">
+							<a href="#"><h3 class="weight c_peru">TECHNICAL</h3></a>
+						</span>
+						<a href="#">
+							<img src="images/1.jpg"/>
+						</a>
+					</li>
+					<li>
+						<div class="image_title">
+							<a href="#"><h3 class=" weight c_peru">CULTURAL</h3></a>
+						</div>
+						<a href="#">
+							<img src="images/2.jpg"/>
+						</a>
+					</li>
+					<li>
+						<div class="image_title">
+							<a href="#"><h3 class=" weight c_peru">FUN</h3></a>
+						</div>
+						<a href="#">
+							<img src="images/3.jpg"/>
+						</a>
+					</li>
+					<li>
+						<div class="image_title">
+							<a href="#"><h3 class=" weight c_peru">GAMING</h3></a>
+						</div>
+						<a href="#">
+							<img src="images/4.jpg"/>
+						</a>
+					</li>
+					<li>
+						<div class="image_title">
+							<a href="#"><h3 class=" weight c_peru">SPONSORS</h3></a>
+						</div>
+						<a href="#">
+							<img src="images/5.jpg"/>
+						</a>
+					</li>
+				</ul>
+			</div>--ends accordian-->
+			
+			<div class="container">
+				<div class="row row1">
+					<div class="col-lg-4 foot_align">
+						<span class="large_size">GRANDIOSE</span>
+						<p class="p_text row1-text">Anything Regarding Techfest t amet sit veroeros sed et blandit consequat sed veroeros lorem et blandit a tortor vitae mattis tempor, sapien sem feugiat sapien,a tortor vitae mattis tempor, sapien sem feugiat sapien, id suscipit magna felis nec elit. Class</p>
+					</div>
+					<div class="col-lg-8 left_padding">
+
+						<ul>
+							<li class="li_space">
+								<div class="round">
+									<span class="glyphicon glyphicon-plane icon-size">
+									</span>
+								</div>
+							</li>
+					
+						
+							<li class="li_space">
+								<div class="round">
+									<span class="glyphicon glyphicon-star icon-size">
+									</span>
+								</div>
+							</li>
+					
+					
+					
+							<li class="li_space last">
+								<div class="round">
+									<span class="glyphicon glyphicon-flash icon-size">
+									</span>
+								</div>
+							</li>
+					
+						</ul>
+					</div>
+				</div><!--row1 ends-->
+				<div class="row row1">
+					<div class="col-sm-12 col-md-12">
+						<div class="col-md-6 col-sm-6 ">
+							<div class="box img_left_tech">
+								<div id="overlay">
+									<span id="word">
+										TECHNICAL
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-6">
+							<div class="col-sm-12 col-md-12 tile_1">
+								<div class="tile_1_inner">
+							
+									<h2 class="row1-text c_cadetblue only media_text_2">all about cultural or technical or fun or sports not a commo</h2>
+								</div>
+							</div>
+								<div class="col-sm-12 col-xs-12 col-md-12 tile">
+									<div class="col-sm-8 col-xs-8 col-md-8 tile_2 only">
+										<div class="front">
+											<h1 class=" only media_text">fermentum</h1>
+										</div>
+										<div class="back">
+											<p class=" p_text row1-text media_text_2">here goes some information regarding</p>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-4 col-md-4 tile_2">
+										
+										<div class="front_1">
+											<a href="#">
+											<span class="glyphicon glyphicon-circle-arrow-right icon-size_2">
+											</span>
+										</a>
+
+										</div>
+										
+									</div>
+								</div>
+						</div>
+						<div class="col-sm-12 col-xs-12 col-md-12">
+							<div class="col-sm-10 col-xs-12 col-md-10 long_tile">
+								<h1 class="only_heading">
+									TECHNICAL
+								</h1>
+							<p class=" p_text row1-text">not a demo!Jumbotron heading Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum msus.</p>
+							</div>
+							<div class="col-sm-2 col-xs-8 col-md-2 tile_3">
+								<a href="#" type="button" class="btn btn-lg all_pdd lets">REGISTER
+				 				</a>
+							</div> 
+						</div>
+					
+
+						</div>
+				</div>
+
+				<!--second-->
+				<div class="row row1">
+					<div class="col-sm-12 col-md-12">
+						<div class="col-md-6 col-sm-6 ">
+							<div class="box img_left_cult">
+								<div id="overlay">
+									<span id="word">
+										CULTURAL
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-6">
+							<div class="col-sm-12 col-md-12 tile_1 img_right_cult">
+								<div class="tile_1_inner">
+							
+									<h2 class="row1-text c_cadetblue only media_text_2">all about cultural or technical or fun or sports not a commo</h2>
+								</div>
+							</div>
+								<div class="col-sm-12 col-xs-12 col-md-12 tile">
+									<div class="col-sm-8 col-xs-8 col-md-8 tile_2 only">
+										<div class="front">
+											<h1 class=" only media_text">fermentum-2</h1>
+										</div>
+										<div class="back">
+											<p class=" p_text row1-text media_text_2">here goes some information regarding-2</p>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-4 col-md-4 tile_2">
+										
+										<div class="front_1">
+											<a href="#">
+											<span class="glyphicon glyphicon-circle-arrow-right icon-size_2">
+											</span>
+										</a>
+
+										</div>
+										
+									</div>
+								</div>
+						</div>
+						<div class="col-sm-12 col-xs-12 col-md-12">
+							<div class="col-sm-10 col-xs-12 col-md-10 long_tile">
+								<h1 class="only_heading">
+									CULTURAL
+								</h1>
+							<p class=" p_text row1-text">not a demo!Jumbotron heading Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum msus.</p>
+							</div>
+							<div class="col-sm-2 col-xs-8 col-md-2 tile_3">
+								<a href="#" type="button" class="btn btn-lg all_pdd lets">REGISTER
+				 				</a>
+							</div> 
+						</div>
+					
+
+						</div>
+				</div>
+
+				<!--third-->
+				<div class="row row1">
+					<div class="col-sm-12 col-md-12">
+						<div class="col-md-6 col-sm-6 ">
+							<div class="box img_left_game">
+								<div id="overlay">
+									<span id="word">
+										GAMING$SPORTS
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-6">
+							<div class="col-sm-12 col-md-12 tile_1 img_right_game">
+								<div class="tile_1_inner">
+							
+									<h2 class="row1-text c_cadetblue only media_text_2">all about cultural or technical or fun or sports not a commo</h2>
+								</div>
+							</div>
+								<div class="col-sm-12 col-xs-12 col-md-12 tile">
+									<div class="col-sm-8 col-xs-8 col-md-8 tile_2 only">
+										<div class="front">
+											<h1 class=" only media_text">fermentum-3</h1>
+										</div>
+										<div class="back">
+											<p class=" p_text row1-text media_text_2">here goes some information regarding-3</p>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-4 col-md-4 tile_2">
+										
+										<div class="front_1">
+											<a href="#">
+											<span class="glyphicon glyphicon-circle-arrow-right icon-size_2">
+											</span>
+										</a>
+
+										</div>
+										
+									</div>
+								</div>
+						</div>
+						<div class="col-sm-12 col-xs-12 col-md-12">
+							<div class="col-sm-10 col-xs-12 col-md-10 long_tile">
+								<h1 class="only_heading small">
+									GAMING$SPORTS
+								</h1>
+							<p class=" p_text row1-text">not a demo!Jumbotron heading Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum msus.</p>
+							</div>
+							<div class="col-sm-2 col-xs-8 col-md-2 tile_3">
+								<a href="#" type="button" class="btn btn-lg all_pdd lets">REGISTER
+				 				</a>
+							</div> 
+						</div>
+					
+
+						</div>
+				</div>
+
+				<!--fourth-->
+				<div class="row row1">
+					<div class="col-sm-12 col-md-12">
+						<div class="col-md-6 col-sm-6 ">
+							<div class="box img_left_fun">
+								<div id="overlay">
+									<span id="word">
+										FUN
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-6">
+							<div class="col-sm-12 col-md-12 tile_1 img_right_fun">
+								<div class="tile_1_inner">
+							
+									<h2 class="row1-text c_cadetblue only media_text_2">all about cultural or technical or fun or sports not a commo</h2>
+								</div>
+							</div>
+								<div class="col-sm-12 col-xs-12 col-md-12 tile">
+									<div class="col-sm-8 col-xs-8 col-md-8 tile_2 only">
+										<div class="front">
+											<h1 class=" only media_text">fermentum-4</h1>
+										</div>
+										<div class="back">
+											<p class=" p_text row1-text media_text_2">here goes some information regarding</p>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-4 col-md-4 tile_2">
+										
+										<div class="front_1">
+											<a href="#">
+											<span class="glyphicon glyphicon-circle-arrow-right icon-size_2">
+											</span>
+										</a>
+
+										</div>
+										
+									</div>
+								</div>
+						</div>
+						<div class="col-sm-12 col-xs-12 col-md-12">
+							<div class="col-sm-10 col-xs-12 col-md-10 long_tile">
+								<h1 class="only_heading">
+									FUN
+								</h1>
+							<p class=" p_text row1-text">not a demo!Jumbotron heading Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum msus.</p>
+							</div>
+							<div class="col-sm-2 col-xs-8 col-md-2 tile_3">
+								<a href="#" type="button" class="btn btn-lg all_pdd lets">REGISTER
+				 				</a>
+							</div> 
+						</div>
+					
+
+						</div>
+				</div>
+				 <!--SPONSORS-->
+				 <div class="row row2">
+
+				 	<div class="col-lg-8">
+				 		<header>
+				 			<h1 class="c_peru only">SPONSORS</h1></header>
+				 		<p class="p_text c_gray"> tortor giat sapien, id suscipit magna felis nec elit. Class aptent taciti sociosqu</p>
+				 		<span id="whole">
+				 		<div class="col-lg-6">
+					 		<ul style="list-style:none;">
+					 			<li  class="border">
+					 				<p class="p_text spon_text">about sponsor number 
+									</p>
+					 				<div class="round_sponsors">
+										<span class="glyphicon glyphicon-star icon-size_sponsors">
+										</span>
+									</div>
+
+					 			</li>
+					 			<li  class="border">
+					 				<p class="p_text spon_text" >about sponsor number 1
+									</p>
+					 				<div class="round_sponsors">
+										<span class="glyphicon glyphicon-star icon-size_sponsors">
+										</span>
+									</div>
+					 			</li>
+					 			<li  class="border">
+					 				<p class="p_text spon_text">about sponsor number 1
+									</p>
+					 				<div class="round_sponsors">
+										<span class="glyphicon glyphicon-star icon-size_sponsors">
+										</span>
+									</div>
+					 			</li>
+					 			<li  class="border">
+					 				<p class="p_text spon_text">about sponsor number 1
+									</p>
+					 				<div class="round_sponsors">
+										<span class="glyphicon glyphicon-star icon-size_sponsors">
+										</span>
+									</div>
+					 			</li>
+					 			<li class="border">
+					 				<p class="p_text spon_text">about sponsor number 1
+									</p>
+					 				<div class="round_sponsors">
+										<span class="glyphicon glyphicon-star icon-size_sponsors">
+										</span>
+									</div>
+					 			</li>
+					 		</ul>
+					 	</div>
+					 	<div class="col-lg-6">
+					 		<ul style="list-style:none;">
+					 			<li  class="border">
+					 				<p class="p_text spon_text">about sponsor number 1
+									</p>
+					 				<div class="round_sponsors">
+										<span class="glyphicon glyphicon-star icon-size_sponsors">
+										</span>
+									</div>
+					 			</li>
+					 			<li  class="border">
+					 				<p class="p_text spon_text">about sponsor number 1
+									</p>
+					 				<div class="round_sponsors">
+										<span class="glyphicon glyphicon-star icon-size_sponsors">
+										</span>
+									</div>
+					 			</li>
+					 			<li  class="border">
+					 				<p class="p_text spon_text">about sponsor number 1
+									</p>
+					 				<div class="round_sponsors">
+										<span class="glyphicon glyphicon-star icon-size_sponsors">
+										</span>
+									</div>
+					 			</li>
+					 			<li  class="border">
+					 				
+					 				<p class="p_text spon_text">about sponsor a sponsor
+									</p>
+						
+					 				<div class="round_sponsors">
+										<span class="glyphicon glyphicon-star icon-size_sponsors">
+										</span>
+									</div>
+					 			</li>
+					 			<li  class="border">
+					 				<p class="p_text spon_text">about sponsor number 
+									</p>
+					 				<div class="round_sponsors">
+										<span class="glyphicon glyphicon-star icon-size_sponsors">
+										</span>
+									</div>
+					 			</li>
+					 		</ul>
+					 	</div>
+					 </span>
+					
+				 	</div>
+				 	<div class="col-lg-4" style="margin-top:70px;">
+
+				 		<header><h2 class="c_peru only">Our Sponsors,Our supporters</h2>
+				 		</header>
+				 		<p class="p_text">thankful to our supporters  tortor giat sapien, id suscipit magna felis nec elit. Class aptent taciti rtor giat sap</p>
+				 		<div class="col-lg-6">
+					 		<ul style="list-style:none;">
+					 			<li>
+					 				<a href="#">
+										<img src="images/e.png"/>
+									</a>
+					 			</li>
+					 			<li>
+					 				<a href="#">
+										<img src="images/e.png" style="margin-top:10px;"/>
+									</a>
+					 			</li>
+					 		</ul>
+				 		</div>
+				 		<div class="col-lg-6">
+					 		<ul style="list-style:none;">
+					 			<li>
+					 				<a href="#">
+										<img src="images/e.png"/>
+									</a>
+					 			</li>
+					 			<li>
+					 				<a href="#">
+										<img src="images/e.png" style="margin-top:10px;"/>
+									</a>
+					 			</li>
+					 		</ul>
+				 		</div>
+				 		<p class="p_text">Lorem ipsum dolor sit amet sit veroeros sed et blandit consequat sed veroeros lorem et blandit adipiscing feugiat phasellus tempus hendrerit, tortor vitae mattis tempor, sapien sem feugiat sapien, id suscipit magna felis nec elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos lorem ipsum dolor sit amet.w</p>
+				 		<a type="button" id="sponsors_but"class="btn btn-lg">this is a button
+				 		</a>
+				 	</div>
+				  </div>
+				</div><!--container-->
+				<!--parallax-->
+				<div class="row register_main">
+					<div class="col-lg-12 over_image">
+						<h3 class="c_peru only">GET YOUR REGISTRATION ID
+						</h3>
+						<a href="#" type="button"  id="footer_but"class="btn btn-lg ">REGISTER
+				 		</a>
+					</div>
+				</div>
+
+				<div class="container_footer">
+					 <div class="row footer_row">
+				 		<div class="col-md-4 col-xs-4 col-sm-4 foot_align">
+				 		
+				 		<ul class="border_right">
+				 			
+				 			<li class="spacing_footer">
+				 				<a href="#">
+				 					HOME
+				 				</a>
+				 			</li>
+				 			<li class="spacing_footer">
+				 				<a href="#">
+				 					SPONSORS
+				 				</a>
+				 			</li>
+				 			<li class="spacing_footer">
+				 				<a href="#">
+				 					REGISTER
+				 				</a>
+				 			</li>
+				 			<li class="spacing_footer">
+				 				<a href="#">
+				 					TEAM
+				 				</a>
+				 			</li>
+				 		</ul>
+
+				 	</div>
+				 	<div class="col-md-4 col-xs-4 col-sm-4 foot_align ">
+				 		<ul class="border_right">
+				 			<li class="spacing_footer">
+				 				<a href="#">
+				 					TECHNICAL
+				 				</a>
+				 			</li>
+				 			<li class="spacing_footer">
+				 				<a href="#">
+				 					CULTURAL
+				 				</a>
+				 			</li>
+				 			<li class="spacing_footer">
+				 				<a href="#">
+				 					GAMING
+				 				</a>
+				 			</li>
+				 			<li class="spacing_footer">
+				 				<a href="#">
+				 					FUN
+				 				</a>
+				 			</li>
+				 		</ul>
+				 	</div>
+				 	<div class="col-md-4 col-xs-4 col-sm-4 foot_align">
+				 		<ul>
+				 			<li class="spacing_footer">
+				 				<a href="#">
+				 				WORKSHOPS
+				 				</a>
+				 			</li>
+				 			<li class="spacing_footer">
+				 				<a href="#">
+				 				CONTACT US
+				 				</a>
+				 			</li>
+				 			<li class="spacing_footer">
+				 				<a href="#">
+				 				    TIMELINE
+				 				</a>
+				 			</li>
+				 			<li class="spacing_footer">
+				 				<a href="#">
+				 					TSS
+				 				</a>
+				 			</li>
+				 		</ul>
+				 	</div>
+				 </div>
+				 <!--social networking button--> 
+
+				 <div class="row row_foot">
+
+					<div class="col-lg-4 col-md-4 col-xs-4"></div>
+				 	<div class="col-lg-4 col-md-4 col-xs-4 foot_align">
+				 		<div class="col-lg-12">
+				 			<h3 class="c_peru only">Stay In Touch</h3>
+				 			<h4 class="c_gray only">Get connected !</h4>
+						 		<div class=" col-lg-12" style="overflow:hidden;">
+						 			<div class="col-lg-3">
+						 				<a href="#">
+						 				<span class="glyphicon glyphicon-star s">
+						 					
+						 				</span>
+						 				</a>
+						 			</div>
+						 			<div class="col-lg-3">
+						 				<a href="#">
+						 				<span class="glyphicon glyphicon-star s">
+						 					
+						 				</span>
+						 				</a>
+						 			</div>
+						 			
+						 			<div class="col-lg-3">
+						 				<a href="#">
+						 				<span class="glyphicon glyphicon-star s">
+						 					
+						 				</span>
+						 				</a>
+						 			</div>
+						 			<div class="col-lg-3">
+						 				<a href="#">
+						 				<span class="glyphicon glyphicon-star s">
+						 					
+						 				</span>
+						 				</a>
+						 			</div>
+						 			
+						 			
+						 			
+						 		</div><!--stay in touch-->
+					 		<div class="col-lg-6 copyright_color_1">
+					 			<h6>Copyrights © 2014 TSS.All Rights reserved.</h6>
+					 		</div>
+					 		<div class="col-lg-6 copyright_color">
+					 			<h6 id="h6_1">Designed By-</h6>
+					 			<h6 id="h6" ><em><a href="#">TSS Web Dev Club</a></em></h6>
+					 		</div>
+					 	</div>
+
+				 	</div>
+				 		<div class="col-lg-4 col-md-4 col-xs-4"></div>
+				 	</div><!--social networking row-->
+				 </div><!--outer row-->
+				 		
+
+				 
+			</div><!--container_foot ends-->
+	</body>
+</html>		
