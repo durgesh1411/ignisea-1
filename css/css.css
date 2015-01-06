@@ -764,6 +764,8 @@ width:25% !important;
 	vertical-align: middle;
 }
 .sports_title_container{
+	background: url('../images/stadium3.jpg') center center;
+	background-size: 100% 100%;
 	padding-top: 190px;
 	padding-bottom: 190px;
 }
