@@ -701,15 +701,9 @@ width:25% !important;
 /*=========Sports & Gaming Page CSS starts==========*/
 
 /*=========Sports & Gaming Page MEDIA QUERIES starts==========*/
-@media (max-width:768px;){
-	.sports_title_container{
-		padding-top: 50px;
-		padding-bottom: 50px;
-	}
-	.sports_title{
-		padding-top: 20px;
-		padding-bottom: 200px;
-		font-size: 2.5em !important;
+@media (max-width:768px){
+	.sports_body{
+		display: none;
 	}
 }
 /*=========Sports & Gaming Page MEDIA QUERIES ends==========*/
