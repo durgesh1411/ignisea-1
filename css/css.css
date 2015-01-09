@@ -1842,6 +1842,11 @@ text-align: left;
 	font-family: 'Raleway-ExtraLight';
 	font-weight: 400;
 }
+.cul_container_footer{
+width:auto;
+padding-right:0px !important;
+background-color:black !important;
+}
 
 @media screen and (min-width: 120px) and (max-width: 728px) {
 	.cul_title
@@ -1907,7 +1912,6 @@ text-align: left;
 		font-size: 1.2em;
 		font-weight: bold;
 		padding-right: 0px;
-
 	}
 	.cul_inner_text_tile3{
 		padding-left: 10px;
@@ -1922,7 +1926,6 @@ text-align: left;
 		padding-top: 250px;
 		font-size: 1.2em;
 		font-weight: bold;
-		
 		color: white;	
 	}
 	.cul_inner_text_tile5{
@@ -1930,7 +1933,6 @@ text-align: left;
 		margin-top: 0px;
 		font-size: 1.2em;
 		font-weight: bold;
-		
 		color: white;	
 	}
 	.cul_side1_inner_text_tile2
@@ -1964,8 +1966,7 @@ text-align: left;
 	{
 		font-size: 1.8em !important;
 		padding-top: 150px;
-		padding-left: 20px;
-		
+		padding-left: 20px;	
 	}
 	.cul_side{
 		padding-top: 200px;
@@ -1982,7 +1983,6 @@ text-align: left;
 	}
 	.cul_side4
 	{
-
 		font-size: 0.9em;
 		padding-left: 20px;
 	}
@@ -2043,15 +2043,18 @@ text-align: left;
 	{
 		font-size: 2em;
 	}
-	.cul_heading3{
+	.cul_heading3
+	{
 		font-size: 2em;
 	}
-	.cul_heading4{
+	.cul_heading4
+	{
 	font-size: 2em;	
 	padding-left: 30px;
 	font-weight: bolder;
 	}
-	.cul_heading4_2{
+	.cul_heading4_2
+	{
 		font-size: 2em;
 	}
 	.cul_heading5
@@ -2072,9 +2075,9 @@ text-align: left;
 		font-size: 1.2em;
 		font-weight: bold;
 		padding-right: 0px;
-
 	}
-	.cul_inner_text_tile3{
+	.cul_inner_text_tile3
+	{
 		padding-left: 10px;
 		padding-top: 10px;
 		font-size: 1.2em;
@@ -2087,7 +2090,6 @@ text-align: left;
 		padding-top: 250px;
 		font-size: 1.2em;
 		font-weight: bold;
-		
 		color: white;	
 	}
 	.cul_inner_text_tile5{
@@ -2095,7 +2097,6 @@ text-align: left;
 		margin-top: 0px;
 		font-size: 1.2em;
 		font-weight: bold;
-		
 		color: white;	
 	}
 	.cul_side1_inner_text_tile2
@@ -2129,17 +2130,16 @@ text-align: left;
 	{
 		font-size: 1.8em !important;
 		padding-top: 150px;
-		padding-left: 20px;
-		
+		padding-left: 20px;	
 	}
-	.cul_side{
+	.cul_side
+	{
 		padding-top: 200px;
 		font-size: 0.9em;
 		padding-left: 20px;
 	}
 	.cul_side4
 	{
-
 		font-size: 0.9em;
 		padding-left: 20px;
 	}
@@ -2201,8 +2201,9 @@ text-align: left;
 		font-size: 2em;
 		font-weight: bolder;
 	}
-	.cul_heading3{
-	font-size: 2em;
+	.cul_heading3
+	{
+	    font-size: 2em;
 		font-weight: bolder	;
 	}
 	.cul_heading4
@@ -2238,13 +2239,13 @@ text-align: left;
 		font-size: 1.2em;
 		font-weight: bold;
 	}
-	.cul_inner_text_tile2{
+	.cul_inner_text_tile2
+	{
 		padding-left: 10px;
 		padding-top: 10px;
 		font-size: 1.2em;
 		font-weight: bold;
 		padding-right: 0px;
-
 	}
 	.cul_inner_text_tile4
 	{
@@ -2252,7 +2253,6 @@ text-align: left;
 		padding-top: 270px;
 		font-size: 1.2em;
 		font-weight: bold;
-		
 		color: white;	
 	}
 	.cul_inner_text_tile5
@@ -2261,10 +2261,10 @@ text-align: left;
 		margin-top: 0px;
 		font-size: 1.2em;
 		font-weight: bold;
-		
 		color: white;	
 	}
-	.cul_side{
+	.cul_side
+	{
 		padding-top: 200px;
 		font-size: 0.9em;
 		padding-left: 20px;
@@ -2295,10 +2295,12 @@ text-align: left;
 		padding-left: 0px;
 		margin-top: 0px;
 	}
-	.cul_side1_inner_text_tile3{
+	.cul_side1_inner_text_tile3
+	{
 		font-size: 1.2em;
 	}
-	.cul_inner_text_tile3{
+	.cul_inner_text_tile3
+	{
 		padding-left: 10px;
 		padding-top: 10px;
 		font-size: 1.2em;
@@ -2317,7 +2319,8 @@ text-align: left;
 	}
 }
 
-/*===========================Cultural Events Page CSS Ends================================================*/
+/*=======Cultural Events Page CSS Ends================*/
+
 /*=============Literary Page CSS starts===============*/
 
 .lit_top{
