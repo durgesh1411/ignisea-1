@@ -2035,6 +2035,11 @@ text-align: left;
 	font-family: 'Raleway-ExtraLight';
 	font-weight: 400;
 }
+.cul_container_footer{
+width:auto;
+padding-right:0px !important;
+background-color:black !important;
+}
 
 @media screen and (min-width: 120px) and (max-width: 728px) {
 	.cul_title
@@ -2100,7 +2105,6 @@ text-align: left;
 		font-size: 1.2em;
 		font-weight: bold;
 		padding-right: 0px;
-
 	}
 	.cul_inner_text_tile3{
 		padding-left: 10px;
@@ -2115,7 +2119,6 @@ text-align: left;
 		padding-top: 250px;
 		font-size: 1.2em;
 		font-weight: bold;
-		
 		color: white;	
 	}
 	.cul_inner_text_tile5{
@@ -2123,7 +2126,6 @@ text-align: left;
 		margin-top: 0px;
 		font-size: 1.2em;
 		font-weight: bold;
-		
 		color: white;	
 	}
 	.cul_side1_inner_text_tile2
@@ -2157,8 +2159,7 @@ text-align: left;
 	{
 		font-size: 1.8em !important;
 		padding-top: 150px;
-		padding-left: 20px;
-		
+		padding-left: 20px;	
 	}
 	.cul_side{
 		padding-top: 200px;
@@ -2175,7 +2176,6 @@ text-align: left;
 	}
 	.cul_side4
 	{
-
 		font-size: 0.9em;
 		padding-left: 20px;
 	}
@@ -2236,15 +2236,18 @@ text-align: left;
 	{
 		font-size: 2em;
 	}
-	.cul_heading3{
+	.cul_heading3
+	{
 		font-size: 2em;
 	}
-	.cul_heading4{
+	.cul_heading4
+	{
 	font-size: 2em;	
 	padding-left: 30px;
 	font-weight: bolder;
 	}
-	.cul_heading4_2{
+	.cul_heading4_2
+	{
 		font-size: 2em;
 	}
 	.cul_heading5
@@ -2265,9 +2268,9 @@ text-align: left;
 		font-size: 1.2em;
 		font-weight: bold;
 		padding-right: 0px;
-
 	}
-	.cul_inner_text_tile3{
+	.cul_inner_text_tile3
+	{
 		padding-left: 10px;
 		padding-top: 10px;
 		font-size: 1.2em;
@@ -2280,7 +2283,6 @@ text-align: left;
 		padding-top: 250px;
 		font-size: 1.2em;
 		font-weight: bold;
-		
 		color: white;	
 	}
 	.cul_inner_text_tile5{
@@ -2288,7 +2290,6 @@ text-align: left;
 		margin-top: 0px;
 		font-size: 1.2em;
 		font-weight: bold;
-		
 		color: white;	
 	}
 	.cul_side1_inner_text_tile2
@@ -2322,17 +2323,16 @@ text-align: left;
 	{
 		font-size: 1.8em !important;
 		padding-top: 150px;
-		padding-left: 20px;
-		
+		padding-left: 20px;	
 	}
-	.cul_side{
+	.cul_side
+	{
 		padding-top: 200px;
 		font-size: 0.9em;
 		padding-left: 20px;
 	}
 	.cul_side4
 	{
-
 		font-size: 0.9em;
 		padding-left: 20px;
 	}
@@ -2394,8 +2394,9 @@ text-align: left;
 		font-size: 2em;
 		font-weight: bolder;
 	}
-	.cul_heading3{
-	font-size: 2em;
+	.cul_heading3
+	{
+	    font-size: 2em;
 		font-weight: bolder	;
 	}
 	.cul_heading4
@@ -2431,13 +2432,13 @@ text-align: left;
 		font-size: 1.2em;
 		font-weight: bold;
 	}
-	.cul_inner_text_tile2{
+	.cul_inner_text_tile2
+	{
 		padding-left: 10px;
 		padding-top: 10px;
 		font-size: 1.2em;
 		font-weight: bold;
 		padding-right: 0px;
-
 	}
 	.cul_inner_text_tile4
 	{
@@ -2445,7 +2446,6 @@ text-align: left;
 		padding-top: 270px;
 		font-size: 1.2em;
 		font-weight: bold;
-		
 		color: white;	
 	}
 	.cul_inner_text_tile5
@@ -2454,10 +2454,10 @@ text-align: left;
 		margin-top: 0px;
 		font-size: 1.2em;
 		font-weight: bold;
-		
 		color: white;	
 	}
-	.cul_side{
+	.cul_side
+	{
 		padding-top: 200px;
 		font-size: 0.9em;
 		padding-left: 20px;
@@ -2488,10 +2488,12 @@ text-align: left;
 		padding-left: 0px;
 		margin-top: 0px;
 	}
-	.cul_side1_inner_text_tile3{
+	.cul_side1_inner_text_tile3
+	{
 		font-size: 1.2em;
 	}
-	.cul_inner_text_tile3{
+	.cul_inner_text_tile3
+	{
 		padding-left: 10px;
 		padding-top: 10px;
 		font-size: 1.2em;
@@ -2510,4 +2512,217 @@ text-align: left;
 	}
 }
 
-/*===========================Cultural Events Page CSS Ends================================================*/
+/*=======Cultural Events Page CSS Ends================*/
+
+/*=============Literary Page CSS starts===============*/
+
+.lit_top{
+background-image:url('../images/lit_bac.jpg');
+background-repeat:no-repeat;
+background-position:center;
+width:100%;
+height:100%;
+  }
+  
+.lit_heading{
+position:absolute;
+text-align:center;
+padding:17%;
+font-size:6em;
+color:white;
+font-family:Times New Roman ;
+}
+#lit_bg{
+opacity:0.9;
+position:relative;
+height:100%; /* preserve aspect ratio */
+width:100%;
+z-index:-1;
+}
+.lit_container{
+width:80em;
+margin-left:auto;
+margin-right:auto;
+margin-top:-100px;
+background-color:white;
+border-radius:1em;
+}
+@media(max-width:1100px){
+.lit_container{
+width:100%;
+border-radius:0;
+margin-top:0;
+}
+.lit_heading{
+font-size:3em;
+padding:7%;
+}
+#lit_bg{
+height:300px;
+}
+}
+.lit_event{
+padding:2%;
+
+}
+
+.top_row{
+margin-left:5px !important;
+overflow:hidden;
+}
+.top_image{
+width:100%;
+height:100%;
+}
+.top_right{
+padding:5%;
+}
+.top_left{
+overflow:hidden;
+}
+.right_list{
+font-family: 'Hind', sans-serif !important;
+margin-top:25px;
+}
+.right_list2{
+margin-top:35px;
+}
+.list{
+padding:2%;
+}
+.container_footer{
+width:auto;
+background-color:#FFEBCD;
+padding-right:0px !important;
+background-color:#181719;
+}
+
+.top_sub{
+font-size:20px;
+line-height:2em;
+color: rgba(128, 128, 128, 0.75)!important;
+font-weight:500 !important;
+}
+.top_font{
+line-height:2em;
+color:#6B7770;
+font-size:11.5pt;
+font-weight:400;
+}
+.top2_right{
+overflow:hidden;
+}
+ul{
+list-style:none;
+}
+
+h3{
+color:#D24726!important;
+}
+.right_img{
+height:200px;
+}
+.register_btn{
+background-color:alizarin !important;
+opacity:;
+border:1px solid grey !important;
+border-radius:5px !important;
+margin-top:10px;
+}
+.arrow{
+text-align:center;
+font-size:14px;
+color:white;
+width:60px;
+height:55px;
+background:#DF7366;
+padding: 1.75em 0px 0.75em;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+margin: 0px 0px 0px;
+box-shadow: 0 0 10px 1px white;
+	-webkit-box-shadow: 0 0 10px 1px white;
+	-moz-box-shadow: 0 0 10px 1px white;
+}
+.cone{
+width:55px;
+border-left: 1.6em solid #DF7366;
+border-top: 2.1em solid transparent !important;
+border-bottom: 2.0em solid transparent !important;
+right: -3.9em;
+bottom:-1px;
+position:absolute;
+}
+.move_right{
+padding-left:20%%;
+margin-top:-40px;
+margin-bottom:0px;
+color:#483949 !important;
+opacity:0.7;
+padding-right:170px;
+}
+.position{
+margin-top:30px;
+margin-bottom:30px;
+}.position_li{
+position:relative !important;
+}
+.arrow1{
+width:210px;
+height:131px;
+background:grey;
+padding: 1.75em 0px 0.75em;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+margin: 0px 0px 0px;
+box-shadow: 0 0 10px 1px white;
+	-webkit-box-shadow: 0 0 10px 1px white;
+	-moz-box-shadow: 0 0 10px 1px white;
+}
+.cone1{
+width:210px;
+border-top: 2em solid grey;
+border-left: 7.5em solid transparent !important;
+border-right: 7.5em solid transparent !important;
+transform:rotate(180deg);
+
+}
+.cover_lit{
+background-color: #F2F2F2 !important;
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+font-size: 14px !important;
+}
+.hr{
+border-color:#DF7366 !important;
+opacity:0.3;
+}
+.move_right:hover{
+color:#DF7366 !important;
+opacity:1;
+}
+
+.opaque_right{
+display:block !important;
+
+}
+.opacity_right_0{
+display:none;
+position:relative;
+}
+.selected{
+}
+
+.img1{
+overflow:hidden;
+padding:4%;
+height:350px;
+width:100%;
+opacity:0.7;
+}
+@media(max-width:770px){
+.img1{
+height:100%;
+}
+}
+/*==============literay page css ends=========*/
+
