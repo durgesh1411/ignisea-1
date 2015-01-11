@@ -1200,7 +1200,7 @@ width:25% !important;
 		height: 500px;
 	}	
 }
-@media screen and (min-width: 768px) and (max-width:992px){
+@media screen and (min-width: 768px) and (max-width:979px){
 	.sports_title{
 		padding-top: 60px;
 		padding-bottom: 60px;
@@ -1257,6 +1257,9 @@ width:25% !important;
 		margin-left: 500px;
 		margin-top: -575px;
 	}
+}
+@media screen and (min-width: 980px) and (max-width: 1280px){
+	
 }
 /*=========Sports & Gaming Page MEDIA QUERIES ends==========*/
 
