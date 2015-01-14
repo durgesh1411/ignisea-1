@@ -1761,6 +1761,16 @@ canvas {
 	padding-left: 100px;
 	font-family: 'Raleway-ExtraLight';
 }
+.cul_desc
+{
+	position: absolute;
+	padding-top: 260px;
+	color:white;
+	font-size: 3.5em;
+	font-weight: bold;
+	padding-left: 300px;
+	font-family: 'Raleway-ExtraLight';
+}
 .cul_tile1
 {
 background-image: url('../images/d.jpg') ;
@@ -1885,7 +1895,7 @@ height: 635px;
 	/*padding-top: 20px;*/
 	color:  black;
 	padding-left: 1000px;
-	margin-top: -260px;
+	margin-top: 70px;
 	font-weight: 600;
 }
 .cul_inner_text_tile5
@@ -1981,8 +1991,8 @@ font-size: 1.8em;
   font-family: 'Raleway-ExtraLight';
   font-weight: 800;	
   font-weight: bolder;
-  margin-top: -150px;
-  padding-left: 80px;
+ /* margin-top: -150px;*/
+  padding-left: 90px;
 }
 .cul_link_tile5
 {
@@ -2019,6 +2029,7 @@ font-size: 1.8em;
 	padding-left: 1060px;
 	font-family: 'Raleway-ExtraLight';
 	font-weight: 800;
+	margin-top: -480px;
 }
 .cul_side5{
 text-align: left;
@@ -2038,7 +2049,7 @@ text-align: left;
 .cul_container_footer{
 width:auto;
 padding-right:0px !important;
-background-color:black !important;
+background-color:#0C0C17 !important;
 }
 
 @media screen and (min-width: 120px) and (max-width: 728px) {
@@ -2046,6 +2057,11 @@ background-color:black !important;
 	{
 		font-size: 2.5em;
 		padding-left: 20px;
+	}
+	.cul_desc
+	{
+		font-size: 2em;
+		padding-left: 100px;
 	}
 	.cul_body{
 		height: 480px;
@@ -2086,6 +2102,7 @@ background-color:black !important;
 	}
 	.cul_heading4_2{
 		font-size: 2em;
+		font-weight: bolder;
 	}
 	.cul_heading5
 	{
@@ -2116,7 +2133,7 @@ background-color:black !important;
 	.cul_inner_text_tile4
 	{
 		padding-left: 10px;
-		padding-top: 250px;
+		padding-top: 0px;
 		font-size: 1.2em;
 		font-weight: bold;
 		color: white;	
@@ -2158,7 +2175,7 @@ background-color:black !important;
 	.cul_link_tile4
 	{
 		font-size: 1.8em !important;
-		padding-top: 150px;
+		/*padding-top: 150px;*/
 		padding-left: 20px;	
 	}
 	.cul_side{
@@ -2178,6 +2195,7 @@ background-color:black !important;
 	{
 		font-size: 0.9em;
 		padding-left: 20px;
+		margin-top: 0px;
 	}
 	.cul_side5
 	{
@@ -2201,7 +2219,7 @@ background-color:black !important;
 	}
 }
 
-@media screen and (min-width: 730px) and (max-width: 1024px){
+@media screen and (min-width: 729px) and (max-width: 1024px){
 	.cul_title
 	{
 		font-size: 2.5em;
@@ -2249,6 +2267,7 @@ background-color:black !important;
 	.cul_heading4_2
 	{
 		font-size: 2em;
+		font-weight: bolder;
 	}
 	.cul_heading5
 	{
@@ -2280,7 +2299,7 @@ background-color:black !important;
 	.cul_inner_text_tile4
 	{
 		padding-left: 10px;
-		padding-top: 250px;
+		padding-top: 0px;
 		font-size: 1.2em;
 		font-weight: bold;
 		color: white;	
@@ -2322,7 +2341,7 @@ background-color:black !important;
 	.cul_link_tile4
 	{
 		font-size: 1.8em !important;
-		padding-top: 150px;
+		/*padding-top: 150px;*/
 		padding-left: 20px;	
 	}
 	.cul_side
@@ -2335,6 +2354,7 @@ background-color:black !important;
 	{
 		font-size: 0.9em;
 		padding-left: 20px;
+		margin-top: 0px;
 	}
 	.cul_side5
 	{
@@ -2443,7 +2463,7 @@ background-color:black !important;
 	.cul_inner_text_tile4
 	{
 		padding-left: 10px;
-		padding-top: 270px;
+		padding-top: 0px;
 		font-size: 1.2em;
 		font-weight: bold;
 		color: white;	
@@ -2472,9 +2492,9 @@ background-color:black !important;
 	}
 	.cul_side4
 	{
-		padding-left: 10px;
-		line-height: 6.7vh;
-		margin-top: 50px;
+		font-size: 0.9em;
+		padding-left: 20px;
+		margin-top: 0px;
 	}
 	.cul_side5
 	{
@@ -2506,9 +2526,10 @@ background-color:black !important;
 	}
 	.cul_link_tile4
 	{
-		margin-top: -340px;
-		padding-left: 10px;
-		font-size: 2em !important;
+		font-size: 1.8em !important;
+		/*padding-top: 150px;*/
+		padding-left: 20px;	
+		margin-top: -310px;
 	}
 }
 

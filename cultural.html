@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset= "UTF-8">
 		<title>Cultural Events</title>
 		<link rel="stylesheet" type="text/css" href="css/css.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<link href='http://fonts.googleapis.com/css?family=Jura:400,600' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/textillate-animate.css">
+	
 		
 		<script src="js/modernizr.js"></script> <!-- Modernizr -->
 
@@ -20,7 +22,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">Grandiose</a>
+					<a class="navbar-brand" href="#">AMENITE'15</a>
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
@@ -75,14 +77,18 @@
 
 
 
-		<div class="cul_title">
+		<div class="cul_title" >
 			C<br>U<br>L<br>T<br>U<br>R<br>A<br>L EVENTS
 		</div>
+		<div class="cul_desc">
+			So you think you can dance!!
+		</div>
 		<div class="cul_body">
+
 		</div>
 
 		<div class="cul_tile1">
-			<div class="cul_heading">
+			<div class="cul_heading" >
 				STEP UP
 			</div>
 			<div class="cul_inner_text">
@@ -291,7 +297,46 @@
 		
 		
 		<script src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.lettering.js"></script>
+  		<script type="text/javascript" src="js/jquery.textillate.js"></script>
+  		<script src="assets/jquery.fittext.js"></script>
 		<script src="js/cultural.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script>
+
+		/*setTimeout(function () {
+        $('.bounce').addClass('in');
+    }, 250);
+
+    setTimeout(function () {
+      $('.hinge').removeClass('out');
+    }, 200);*/
+
+  
+  
+  
+  $(function () {  
+    $('.cul_desc').textillate({  
+        in: {  
+            effect: 'bounce'
+        },  
+        out: {  
+          effect: 'hinge'  
+        },
+        loop: true 
+    });  
+  });
+
+  $('.cul_tile1').scroll()
+  (function(){
+  	$('.cul_heading').textillate({  
+        in: {  
+            effect: 'bounce'  
+        } 
+    });  
+  });
+  
+  
+  </script>
 	</body>
 </html>
