@@ -583,6 +583,11 @@ background-color:#FFEBCD;
 padding-right:0px !important;
 background-color:#181719;
 }
+.sports_container_footer{
+width:auto;
+padding-right:0px !important;
+background-color:rgba(24,23,25,1);
+}
 .foot_align{
 text-align:center;
 padding-right:0px !important;
@@ -930,7 +935,7 @@ width:25% !important;
 	padding-left: 65px;
 	position: absolute;
 	margin-top: 100px;
-	margin-left: 1197px;
+	margin-left: 1297px;
 	transition:all 1s ease;
 }
 
@@ -942,12 +947,12 @@ width:25% !important;
 	visibility: hidden;
 }
 .sports_kite_register_link{
+	visibility: hidden;
 	font-size: 25px;
 	position: absolute;
 	color: rgb(255,255,255);
 	margin-top: -55px;
 	margin-left: -30px;
-	visibility: hidden;
 	transition:all 0.7s ease;
 }
 
@@ -1019,8 +1024,6 @@ width:25% !important;
 .sports_sudoku{
 	width: 100% ;
 	background:url('../images/sudoku1.jpg') center center;
-	background-size: 100% 100%;
-
 }
 .sports_sudoku > div{
 	width: 100%;
@@ -1258,8 +1261,49 @@ width:25% !important;
 		margin-top: -575px;
 	}
 }
-@media screen and (min-width: 980px) and (max-width: 1280px){
-	
+@media screen and (min-width: 980px) and (max-width: 1279px){
+	.sports_kite_about{
+		margin-top: -300px;
+		margin-left: 270px;
+	}
+	.sports_kite_register{
+		margin-top: 100px;
+		margin-left:830px;
+	}
+	.sports_kite_register:hover{
+		margin-left: 730px;
+	}
+	.sports_sudoku{
+		background-size: 100% 100%;
+	}
+	.sports_sudoku > div{
+		padding-top: 30%;
+	}
+	.sports_button_inverse{
+		margin-top:-575px;
+		margin-left: 700px;
+	}
+}
+@media screen and (min-width: 1280px) and (max-width:1919px){
+	.sports_lan_detail > li{
+		padding-top: 30px;
+		padding-bottom: 21px;
+	}
+	.sports_kite_about{
+		margin-top: -320px;
+		margin-left: 420px;
+	}
+	.sports_kite_register{
+		margin-top: 100px;
+		margin-left:1130px;
+	}
+	.sports_kite_register:hover{
+		margin-left: 1030px;
+	}
+	.sports_button_inverse{
+		margin-top:-525px;
+		margin-left: 1000px;
+	}
 }
 /*=========Sports & Gaming Page MEDIA QUERIES ends==========*/
 
