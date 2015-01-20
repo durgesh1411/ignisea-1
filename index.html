@@ -45,7 +45,80 @@
 					});
 				});
 				
-		
+		//next
+		$(".back_circle").hide();
+				$(".cc").mouseenter(function(){
+					$(this).children(".front_circle").transit({
+						"rotateX":"90deg"
+					},300,"easeInCirc",function(){
+						var back;
+						$(this).hide();
+						back=$(this).siblings(".back_circle");
+						back.css({
+							"rotateX":"-90deg"
+						});
+						back.show();
+						back.transit({
+							"rotateX":"0deg"
+						},300,"easeOutCirc");
+					});
+				});
+
+				$(".cc").mouseleave(function(){
+					$(this).children(".back_circle").transit({
+						"rotateX":"90deg"
+					},300,"easeInCirc",function(){
+						var front;
+						$(this).hide();
+						front=$(this).siblings(".front_circle");
+						front.css({
+							"rotateX":"-90deg"
+
+						})
+						front.show();
+						front.transit({
+							"rotateX":"0deg"
+						},300,"easeInCirc");
+					});
+				});
+
+		//next
+		$(".back_circle").hide();
+				$(".top_circle").mouseenter(function(){
+					$(this).children(".front_circle").transit({
+						"rotateX":"90deg"
+					},300,"easeInCirc",function(){
+						var back;
+						$(this).hide();
+						back=$(this).siblings(".back_circle");
+						back.css({
+							"rotateX":"-90deg"
+						});
+						back.show();
+						back.transit({
+							"rotateX":"0deg"
+						},300,"easeOutCirc");
+					});
+				});
+
+				$(".top_circle").mouseleave(function(){
+					$(this).children(".back_circle").transit({
+						"rotateX":"90deg"
+					},300,"easeInCirc",function(){
+						var front;
+						$(this).hide();
+						front=$(this).siblings(".front_circle");
+						front.css({
+							"rotateX":"-90deg"
+
+						})
+						front.show();
+						front.transit({
+							"rotateX":"0deg"
+						},300,"easeInCirc");
+					});
+				});
+				
 		
 				
 			});
@@ -56,6 +129,14 @@
 					
 					.s{
 						font-size:25px;
+					
+					}
+
+				}
+				@media (max-width: 1200px) {
+					
+					.news_sec{
+						font-size:25px !important;
 					
 					}
 
@@ -186,6 +267,44 @@
 		
 	</head>		
 	<body class="cover">
+		 <div class="navbar navbar-default navbar-fixed-top top_1 " role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand a_2" href="#">GRANDIOSE</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+          
+           
+           
+            <li class="dropdown">
+              <a class="a_1"  href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Events <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a class="a_1" href="index.html#">Action</a></li>
+                <li><a class="a_1" href="index.html#">Another action</a></li>
+                <li><a class="a_1" href="index.html#">Something else here</a></li>
+                
+              </ul>
+            </li>
+            	 <li><a class="a_1" href="index.html#about">Timeline</a></li>
+            	 <li><a class="a_1" href="index.html#about">About Us</a></li>
+            	 <li><a class="a_1" href="index.html#about">Contact Us</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+          	 <li><a class="a_1"  href="index.html">TSS</a></li>
+       
+            <li><a class="a_1" href="../navbar-static-top/index.html">ESF</a></li>
+           
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
 		<!--navbar starts here
 		 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 				<div class="navbar-header">
@@ -256,8 +375,10 @@
 			<div class="container">
 				<div class="row row1">
 					<div class="col-lg-4 foot_align">
-						<span class="large_size">GRANDIOSE</span>
-						<p class="p_text row1-text">Anything Regarding Techfest t amet sit veroeros sed et blandit consequat sed veroeros lorem et blandit a tortor vitae mattis tempor, sapien sem feugiat sapien,a tortor vitae mattis tempor, sapien sem feugiat sapien, id suscipit magna felis nec elit. Class</p>
+						<span class="large_size">GRANDIOSE
+							<p class="date">FEB  10-14, 2015</p>
+						</span>
+						<p class="p_text row1-text">Anything Regarding Techfest t amet sit veroeros sed et blandit consequat sed veroeros lorem et blandit a tortor vitae mattis tempor, sapien sem t sapien, id suscipit magna felis nec elit. Class</p>
 					</div>
 					<div class="col-lg-8 left_padding">
 
@@ -289,6 +410,154 @@
 						</ul>
 					</div>
 				</div><!--row1 ends-->
+				<div class="row row3">
+					<div class="col-md-4 col-sm-4">
+						
+						<div class="col-md-12 col-lg-12 col-sm-12 box_c">
+								<a href="#">
+							<div class="text_padding news p_text">
+								<h4 class="heading_news news c_blue">Patang Baji</h4>
+							goes somt h uthrit atriks xtod
+							</div>
+					
+							<div class="cc mycircle2">
+								<div class="front_circle">
+									<p class="c_cadetblue "> feb 
+									  10</p>
+								</div>
+								<div class="back_circle">
+									<p class="c_cadetblue ">3:00 pm</p>
+								</div>
+							</div>	
+								</a>				
+						</div>
+							
+						<div class="col-md-12 col-lg-12 col-sm-12 box_c">
+							<a href="#">
+							<div class="text_padding news p_text">
+									<h4 class="heading_news news c_blue">Patang Baji</h4>
+								goes somt h uthrit atriks xtod
+								</div>
+							
+							<div class="cc mycircle2">
+								<div class="front_circle">
+								<p class="c_cadetblue "> feb 
+											 10</p>
+								</div>
+								<div class="back_circle">
+									<p class="c_cadetblue ">3:00 pm</p>
+								</div>
+							</div></a>
+						</div>
+
+						<div class="col-md-12 col-sm-12 col-xs-12 box_c">
+							<a href="#">
+							<div class="text_padding news p_text">
+								
+									<h4 class="heading_news news c_blue">Patang Baji</h4>
+									goes somt h uthrit atriks xtod
+							
+								</div>
+								
+							<div class="cc mycircle2">
+								<div class="front_circle">
+								<p class="c_cadetblue "> feb 
+											 11</p>
+								</div>
+								<div class="back_circle">
+									<p class="c_cadetblue ">3:00 pm</p>
+								</div>
+							</div>
+								</a>
+						</div>
+					</div>
+				
+					<div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
+						<div class="col-md-12 col-xs-12 col-sm-12 blank_center">
+						</div>
+						<div class="col-md-12  col-sm-12 col-xs-12">
+							<h1 class="only_heading news news_sec">
+									NEWS SECTION
+								</h1>
+								<h3 class="news">catch all the RECENT events</h3>
+								<h4 class="p_text news">
+							    </h4>
+						</div>
+						<div class="col-md-12 col-xs-12 col-sm-12 blank_center">
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					
+							<div class="col-md-12 col-xs-12 col-sm-12 up_down">
+
+								<div class="col-md-8 col-xs-8 col-sm-8 left_blank">
+									<div class="right_lower">
+										<a href="#">
+											<div class="text_padding news p_text">
+												<h4 class="heading_news news c_blue">Clash Of Titans</h4>
+													goes somt h uthrit atriks pixtod oes 
+											</div>
+										</a>
+									</div>
+								</div>
+									<div class="col-sm-4 col-xs-4 col-md-4 top_circle">
+										<div class="front_circle">
+											<p class="c_cadetblue "> feb 
+											 10</p>
+										</div>
+										<div class="back_circle">
+											<p class="c_cadetblue ">3:00 pm</p>
+										</div>
+									</div>
+							</div>
+				
+						<div class="col-md-12 col-xs-12 col-sm-12 up_down">
+								<div class="col-md-8 col-xs-8 col-sm-8 left_blank">
+									<div class="right_lower">
+										<a href="#">
+											<div class="text_padding news p_text">
+										
+												<h4 class="heading_news news c_blue">Patang Baji</h4>
+												goes somt h uthrit atriks pixtod 
+											</div>
+										</a>
+									</div>
+								</div>
+									<div class="col-sm-4 col-xs-4 col-md-4 top_circle">
+										<div class="front_circle">
+								<p class="c_cadetblue "> feb 
+											 10</p>
+								</div>
+								<div class="back_circle">
+									<p class="c_cadetblue ">3:00 pm</p>
+								</div>
+									</div>
+							</div>
+					
+						<div class="col-md-12 col-xs-12 col-sm-12 up_down">
+								<div class="col-md-8 col-xs-8 col-sm-8 left_blank">
+									<div class="right_lower">
+										<a href="#">
+											<div class="text_padding news p_text">
+												<h4 class="heading_news news c_blue">Patang Baji</h4>
+												goes somt h uthrit atriks piod
+											</div>
+										</a>
+									</div>
+								</div>
+									<div class="col-sm-4 col-xs-4 col-md-4 top_circle">
+										<div class="front_circle">
+								<p class="c_cadetblue "> feb 
+											 10</p>
+								</div>
+								<div class="back_circle">
+									<p class="c_cadetblue ">3:00 pm</p>
+								</div>
+									</div>
+							</div>
+					</div>
+				</div>
+			<!--technical events tile-->
 				<div class="row row1">
 					<div class="col-sm-12 col-md-12">
 						<div class="col-md-6 col-sm-6 ">
@@ -346,7 +615,7 @@
 						</div>
 				</div>
 
-				<!--second-->
+				<!--second cultural events tile-->
 				<div class="row row1">
 					<div class="col-sm-12 col-md-12">
 						<div class="col-md-6 col-sm-6 ">
@@ -404,7 +673,7 @@
 						</div>
 				</div>
 
-				<!--third-->
+				<!--third gaming events tile-->
 				<div class="row row1">
 					<div class="col-sm-12 col-md-12">
 						<div class="col-md-6 col-sm-6 ">
@@ -462,7 +731,7 @@
 						</div>
 				</div>
 
-				<!--fourth-->
+				<!--fourth fun events tile-->
 				<div class="row row1">
 					<div class="col-sm-12 col-md-12">
 						<div class="col-md-6 col-sm-6 ">
@@ -519,19 +788,19 @@
 
 						</div>
 				</div>
-				 <!--SPONSORS-->
+				 <!--SPONSORS tile-->
 				 <div class="row row2">
 
 				 	<div class="col-lg-8">
 				 		<header>
 				 			<h1 class="c_peru only">SPONSORS</h1></header>
-				 		<p class="p_text c_gray"> tortor giat sapien, id suscipit magna felis nec elit. Class aptent taciti sociosqu</p>
+				 		<h4 class="p_text news"> tortor giat sapien, id suscipit magna felis nec elit. Class aptent taciti sociosqu</h4>
 				 		<span id="whole">
 				 		<div class="col-lg-6">
 					 		<ul style="list-style:none;">
 					 			<li  class="border">
-					 				<p class="p_text spon_text">about sponsor number 
-									</p>
+					 				<h4 class="p_text spon_text news">about sponsor number 
+									</h4>
 					 				<div class="round_sponsors">
 										<span class="glyphicon glyphicon-star icon-size_sponsors">
 										</span>
@@ -539,60 +808,53 @@
 
 					 			</li>
 					 			<li  class="border">
-					 				<p class="p_text spon_text" >about sponsor number 1
-									</p>
+					 				<h4 class="p_text news spon_text" >about sponsor number 1
+									</h4>
 					 				<div class="round_sponsors">
 										<span class="glyphicon glyphicon-star icon-size_sponsors">
 										</span>
 									</div>
 					 			</li>
 					 			<li  class="border">
-					 				<p class="p_text spon_text">about sponsor number 1
-									</p>
+					 				<h4 class="p_text news spon_text">about sponsor number 1
+									</h4>
 					 				<div class="round_sponsors">
 										<span class="glyphicon glyphicon-star icon-size_sponsors">
 										</span>
 									</div>
 					 			</li>
 					 			<li  class="border">
-					 				<p class="p_text spon_text">about sponsor number 1
-									</p>
+					 				<h4 class="p_text news spon_text">about sponsor number 1
+									</h4>
 					 				<div class="round_sponsors">
 										<span class="glyphicon glyphicon-star icon-size_sponsors">
 										</span>
 									</div>
 					 			</li>
-					 			<li class="border">
-					 				<p class="p_text spon_text">about sponsor number 1
-									</p>
-					 				<div class="round_sponsors">
-										<span class="glyphicon glyphicon-star icon-size_sponsors">
-										</span>
-									</div>
-					 			</li>
+					 			
 					 		</ul>
 					 	</div>
 					 	<div class="col-lg-6">
 					 		<ul style="list-style:none;">
 					 			<li  class="border">
-					 				<p class="p_text spon_text">about sponsor number 1
-									</p>
+					 				<h4 class="p_text news spon_text">about sponsor number 1
+									</h4>
 					 				<div class="round_sponsors">
 										<span class="glyphicon glyphicon-star icon-size_sponsors">
 										</span>
 									</div>
 					 			</li>
 					 			<li  class="border">
-					 				<p class="p_text spon_text">about sponsor number 1
-									</p>
+					 				<h4 class="p_text news spon_text">about sponsor number 1
+									</h4>
 					 				<div class="round_sponsors">
 										<span class="glyphicon glyphicon-star icon-size_sponsors">
 										</span>
 									</div>
 					 			</li>
 					 			<li  class="border">
-					 				<p class="p_text spon_text">about sponsor number 1
-									</p>
+					 				<h4 class="p_text news spon_text">about sponsor number 1
+									</h4>
 					 				<div class="round_sponsors">
 										<span class="glyphicon glyphicon-star icon-size_sponsors">
 										</span>
@@ -600,22 +862,15 @@
 					 			</li>
 					 			<li  class="border">
 					 				
-					 				<p class="p_text spon_text">about sponsor a sponsor
-									</p>
+					 				<h4 class="p_text news spon_text">about sponsor a sponsor
+									</h4>
 						
 					 				<div class="round_sponsors">
 										<span class="glyphicon glyphicon-star icon-size_sponsors">
 										</span>
 									</div>
 					 			</li>
-					 			<li  class="border">
-					 				<p class="p_text spon_text">about sponsor number 
-									</p>
-					 				<div class="round_sponsors">
-										<span class="glyphicon glyphicon-star icon-size_sponsors">
-										</span>
-									</div>
-					 			</li>
+					 		
 					 		</ul>
 					 	</div>
 					 </span>
@@ -625,7 +880,7 @@
 
 				 		<header><h2 class="c_peru only">Our Sponsors,Our supporters</h2>
 				 		</header>
-				 		<p class="p_text">thankful to our supporters  tortor giat sapien, id suscipit magna felis nec elit. Class aptent taciti rtor giat sap</p>
+				 		<h4 class="p_text news">thankful to our supporters  tortor giat sapien, aptent taciti rtor giat sap</h4>
 				 		<div class="col-lg-6">
 					 		<ul style="list-style:none;">
 					 			<li>
@@ -654,9 +909,8 @@
 					 			</li>
 					 		</ul>
 				 		</div>
-				 		<p class="p_text">Lorem ipsum dolor sit amet sit veroeros sed et blandit consequat sed veroeros lorem et blandit adipiscing feugiat phasellus tempus hendrerit, tortor vitae mattis tempor, sapien sem feugiat sapien, id suscipit magna felis nec elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos lorem ipsum dolor sit amet.w</p>
-				 		<a type="button" id="sponsors_but"class="btn btn-lg">this is a button
-				 		</a>
+				 		<h4 class="p_text news">Lorem ipsum dolorveroeros lorem et blandit adipiscing feugiat phasellus tempus hendrerit, tortor vitae mattis conu sit amet.w</h4>
+				 	
 				 	</div>
 				  </div>
 				</div><!--container-->
