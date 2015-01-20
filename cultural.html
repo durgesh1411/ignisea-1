@@ -6,13 +6,35 @@
 		<link rel="stylesheet" type="text/css" href="css/css.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/textillate-animate.css">
+		<!--<link rel="stylesheet" type="text/css" href="css/default.css" />--
+		<link rel="stylesheet" type="text/css" href="css/component.css" />-->
+		<script src="js/modernizr.custom.js"></script>
 	
 		
 		<script src="js/modernizr.js"></script> <!-- Modernizr -->
 
 	</head>
 	<body>
-		<nav class="navbar navbar-inverse navbar-fixed-top main_nav_colour" role="navigation">
+		<div class="md-modal md-effect-5" id="modal-5">
+			<div class="md-content">
+				<h3>STEP UP</h3>
+				<div>
+					<p><strong>Rules:</strong></p>
+					<ol>
+						<li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+						<li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+						<li><strong>Close:</strong> click on the button below to close the modal.</li>
+					</ol>
+					<div class="regi_but">
+					<button class="md-close">Register here!</button>
+				</div>
+				<div class="close_but">
+					<button class="md-close">Close me!</button>
+				</div>
+
+				</div>
+			</div>
+		</div><nav class="navbar navbar-inverse navbar-fixed-top main_nav_colour" role="navigation">
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
@@ -81,7 +103,7 @@
 			C<br>U<br>L<br>T<br>U<br>R<br>A<br>L EVENTS
 		</div>
 		<div class="cul_desc">
-			So you think you can dance!!
+			Face your fears with dance, music and drama!!
 		</div>
 		<div class="cul_body">
 
@@ -95,7 +117,7 @@
 				This event involves the participation of a single person. A medley of various songs will be 
 			</div>
 			<div class="cul_side">
-				<div class="cul_side1_inner_text">Date:</div><div class="cul_side_text">17-2-2015</div><br><div class="cul_side1_inner_text">Venue:</div><div class="cul_side_text">Dashmesh Auditorium</div><br><div class="cul_side1_inner_text">Registration fee:</div><div class="cul_side_text">Rs.50</div><br><div class="cul_link_tile2"><a href="jchjh">Register here</a></div>
+				<div class="cul_side1_inner_text">Date:</div><div class="cul_side_text">17-2-2015</div><br><div class="cul_side1_inner_text">Venue:</div><div class="cul_side_text">Dashmesh Auditorium</div><br><div class="cul_side1_inner_text">Registration fee:</div><div class="cul_side_text">Rs.50</div><br><div class="cul_link_tile2"><a class="md-trigger b" data-modal="modal-5">Rules & Registration</a>
 			</div>
 		</div>
 
@@ -293,6 +315,7 @@
 
 				 
 			</div><!--container_foot ends-->	
+<div class="md-overlay"></div><!-- the overlay element -->
 
 		
 		
@@ -302,6 +325,18 @@
   		<script src="assets/jquery.fittext.js"></script>
 		<script src="js/cultural.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<!-- classie.js by @desandro: https://github.com/desandro/classie -->
+		<script src="js/classie.js"></script>
+		<script src="js/modalEffects.js"></script>
+
+		<!-- for the blur effect -->
+		<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+		<script>
+			// this is important for IEs
+			var polyfilter_scriptpath = '/js/';
+		</script>
+		<script src="js/cssParser.js"></script>
+		<script src="js/css-filters-polyfill.js"></script>
 		<script>
 
 		/*setTimeout(function () {
@@ -319,11 +354,9 @@
     $('.cul_desc').textillate({  
         in: {  
             effect: 'bounce'
-        },  
-        out: {  
-          effect: 'hinge'  
-        },
-        loop: true 
+        }
+        
+        
     });  
   });
 

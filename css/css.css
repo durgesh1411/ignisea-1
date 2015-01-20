@@ -1,4 +1,4 @@
-/*========================== Fonts========================*/
+/*=================Main Page CSS starts===================*/
 @font-face {
   font-family: 'Lato';
   font-style: normal;
@@ -60,7 +60,7 @@
 }
 
 body{
-  font-family: 'Raleway-ExtraLight';
+  font-family: 'Raleway-ExtraLight' !important;
 }
 .only{
 font-family:'Raleway-ExtraLight' !important;
@@ -76,6 +76,7 @@ font-family:'Raleway-ExtraLight' !important;
 .only_heading{
 font-family:'Raleway-ExtraLight' !important;
 color:peru;
+
 }
 .large_size{
 	font-size:55px;
@@ -86,12 +87,10 @@ color:peru;
 	margin: 0; 
 	padding: 0;
 }
-
+.date{
+	font-size:22px;
+}
 .cover{
-/*background:url('../images/bg01-cro.png') repeat-x scroll 0% 0% #181719;
-*/
-
-
 background-color:#181719;#FFE4E1#FFEBCD #FFF8DC
 
 }
@@ -114,10 +113,158 @@ background-color:#181719;#FFE4E1#FFEBCD #FFF8DC
 	background: url('../images/shooting-img1-crop.jpg')!important;
 }
 .img_left_fun{
-	background:url('../images/.jpg') !important;
+	background:url('../images/fun.gif') !important;
 }
 .img_right_fun{
 	background: url('../images/gps.jpg')!important;
+}
+/*here goes the styling of news section*/
+/*center one  news*/
+.center_circle{
+	width:160px!important;
+	height:160px;
+	background-color:peru;
+	border-radius:50%;
+}
+.blank_center{
+	height:90px;
+	width:90px !important;
+}
+.box_c{
+	width:270px !important;
+	height:100px;
+	border-top-left-radius:48px;
+	border-bottom-left-radius:48px;
+	border:1px solid;
+	margin-top:9px;
+	padding-left:25px !important;
+	padding-right:50px !important;
+	animation:shadow_news 2s infinite;
+}
+@keyframes shadow_news {
+	0%{
+		box-shadow: 0px 0px 1px 2px rgba(0,0,0.5,.75);
+		-webkit-box-shadow: 0px 0px 1px 2px rgba(0,0,0.5,.75);
+		-moz-box-shadow: 0px 0px 1px 2px rgba(0,0,0.5,.75);
+	}
+	100%{
+		box-shadow: 0px 0px 3px 4px rgba(0,0,0.5,.75);
+		-webkit-box-shadow: 0px 0px 1px 2px rgba(0,0,0.5,.75);
+		-moz-box-shadow: 0px 0px 1px 2px rgba(0,0,0.5,.75);
+	}
+
+}
+.text_padding{
+width:213px !important;
+	padding-left:10px;
+	padding-right: 0px;
+	position: absolute; 
+}
+.cc{
+	width:80px !important;
+	height:80px;
+	border-radius: 40px;
+	background-color: peru;
+margin-left:204px;
+margin-top:8px;
+
+}
+/*center one  news*/
+.heading_news{
+	margin-top:1px !important;
+	margin-bottom:4px !important;
+}
+.front_circle{
+	padding-left:10px;
+	padding-top:12px !important;
+	font-size:17px !important;
+	font-weight:bold;
+	letter-spacing: 1px;
+}
+.back_circle{
+	padding-left:10px;
+	padding-top:12px !important;
+	font-size:17px !important;
+	font-weight:bold;
+	letter-spacing: 1px;
+}
+.center_padding{
+	padding-left:5px;
+	padding-right:5px;
+}
+.news{
+	text-align:center;
+	margin-top:10px;
+	font-weight:100 !important;
+	font-family: "Raleway-ExtraLight" !important;
+	line-height: 1.6777;
+}
+.news_2{
+	text-align:left;
+	margin-top:10px;
+}
+.row3{
+	margin-top:40px;
+	margin-bottom:40px;
+}
+.up_down{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.left_blank{
+	width:150px !important;
+	height:90px;
+	padding-left: 39px !important;
+}
+.right_lower{
+	width:270px !important;
+	height:100px;
+	border:1px solid;
+	padding-left: 38px !important;
+	border-top-right-radius:48px;
+	border-bottom-right-radius:48px;
+
+}
+
+.b_shadow{
+	box-shadow: 0 0 12px 8px rgba(0, 0, .10, 0.75);
+	-webkit-box-shadow: 0 0 12px 8px rgba(0, 0, .10, 0.75);
+	-moz-box-shadow: 0 0 12px 8px rgba(0, 0, .10, 0.75);
+
+}
+.top_circle{
+	width:79px !important;
+	height:80px;
+	border-radius: 40px;
+	background-color: peru;
+	margin-top:8px;
+	padding-left: 0px !important;
+		position: absolute !important;
+		animation:2s mycircle infinite;
+}
+@keyframes mycircle {
+	0%{
+		transform:translateY(9px);
+	}
+	50%{
+		transform:translateY(-6px);
+	}
+	100%{
+		transform:translateY(9px);
+	}
+}.mycircle2{
+	animation:2s mycircle2 infinite;
+}
+@keyframes mycircle2 {
+	0%{
+		transform:translateY(-6px);
+	}
+	50%{
+		transform:translateY(9px);
+	}
+	100%{
+		transform:translateY(-6px);
+	}
 }
 .c_beige{
 	color:beige !important;
@@ -125,8 +272,12 @@ background-color:#181719;#FFE4E1#FFEBCD #FFF8DC
 .c_cadetblue{
 	color:#181719 !important;
 	font-weight:bold !important;
-	padding-left:17px;
-	padding-right:17px;
+	padding-left:13px;
+	padding-right:15px;
+	font-size:19px !important;
+}
+.c_blue{
+	color:#428BCA !important;
 }
 .c_peru{
 	color:peru !important;
@@ -135,11 +286,26 @@ background-color:#181719;#FFE4E1#FFEBCD #FFF8DC
 	color:lightslategray !important;
 }
 .p_text{
+	
 	letter-spacing: 1px;
 	color:lightslategray!important;
 }
 .weight{
 	font-weight: normal !important;
+}
+/*styling of navbar*/
+.top_1{
+	background-color: rgba(0,0,0,.25) !important;
+	border:#333 !important;
+}
+.active>a{
+	background-color:silver!important; 
+}
+.a_1{
+	color: #428BCA !important;
+}
+.a_2{
+	color: peru!important;
 }
 /*events tiles styling*/
 .tile{
@@ -556,6 +722,7 @@ position:relative;
 }
 .spon_text{
 	float:right;
+	font-size:17px !important;
 
 }
 .icon-size_sponsors{
@@ -662,6 +829,7 @@ transform:translateY(-10px);
 -moz-transform:translateY(-10px);
 }
 .footer_row{
+	
 text-align:center;
 padding-top:20px;
 margin-left:0px !important;
@@ -695,9 +863,7 @@ padding-top:0px !important;
 .percent{
 width:25% !important;
 }
-}
 /*=============Main Page CSS ends===============*/
-
 /*=========Sports & Gaming Page CSS starts==========*/
 
 
@@ -2037,7 +2203,7 @@ font-size: 1.8em;
 }
 .cul_link_tile2{
 	color: red !important;
-  font-size: 3em !important;
+  font-size: 2.5em !important;
   font-family: 'Raleway-ExtraLight';
   font-weight: 800;
 }
@@ -2095,7 +2261,7 @@ font-size: 1.8em;
 	margin-top: -480px;
 }
 .cul_side5{
-text-align: left;
+	text-align: left;
 	padding-left: 40px;
 	margin-top: -150px;
 	font-family: 'Raleway-ExtraLight';
@@ -2113,6 +2279,111 @@ text-align: left;
 width:auto;
 padding-right:0px !important;
 background-color:#0C0C17 !important;
+}
+.md-modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 50%;
+	max-width: 630px;
+	min-width: 320px;
+	height: auto;
+	z-index: 2000;
+	visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.md-show {
+	visibility: visible;
+}
+
+.md-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	opacity: 0;
+	background: rgba(42, 39, 39, 0.8);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.md-show ~ .md-overlay {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* Content styles */
+.md-content {
+	color: #334253;
+	background: white;
+	position: relative;
+	border-radius: 3px;
+	margin: 0 auto;
+}
+
+.md-content h3 {
+	margin: 0;
+	padding: 0.4em;
+	text-align: center;
+	font-size: 2.4em;
+	font-weight: 300;
+	opacity: 0.8;
+	background: rgba(0,0,0,0.1);
+	border-radius: 3px 3px 0 0;
+}
+
+.md-content > div {
+	padding: 15px 40px 30px;
+	margin: 0;
+	font-weight: 300;
+	font-size: 1.15em;
+}
+
+.md-content > div p {
+	margin: 0;
+	padding: 10px 0;
+}
+
+.md-content > div ul {
+	margin: 0;
+	padding: 0 0 30px 20px;
+}
+
+.md-content > div ul li {
+	padding: 5px 0;
+}
+
+.md-content button {
+	display: block;
+	margin: 0 auto;
+	font-size: 1.2em;
+	color: #E0516A;
+	padding: 5px;
+}
+.regi_but
+{
+	margin-left: -400px !important;
+}
+.close_but
+{
+	margin-left: 380px !important;
+	margin-top: -38.8px;
+}
+
+.b
+{
+	cursor: pointer;
 }
 
 @media screen and (min-width: 120px) and (max-width: 728px) {
@@ -2700,9 +2971,7 @@ ul{
 list-style:none;
 }
 
-h3{
-color:#D24726!important;
-}
+
 .right_img{
 height:200px;
 }
