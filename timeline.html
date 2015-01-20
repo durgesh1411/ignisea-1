@@ -4,6 +4,7 @@
 		<title>
 			Timeline
 		</title>
+		<meta charset = "UTF-8">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 		<link rel = "stylesheet" type = "text/css" href = "css/bootstrap.min.css" />
 		<link rel = "stylesheet" type = "text/css" href = "css/css.css" />
@@ -77,24 +78,27 @@
     <!-- /.container-fluid -->
 	</nav>
 		<br>
-		<div class = "container">
+		<div class="background">
+			<img src ="images/kite1.jpg" />
+		</div>
+		<div class = "container" id = "container">
 			<div class="page-header">
 				<h1>Full Schedule </h1>
 			</div>
-				<input type = "radio" name = "day" id = "day1" value = "day1" checked />
+				<input class = "hvr-float-shadow" type = "radio" name = "day" id = "day1" value = "day1" checked />
 				<button type="button" >Day 1</button>
-				<input type = "radio" name = "day" id = "day2" value = "day2" />
+				<input class = "hvr-float-shadow" type = "radio" name = "day" id = "day2" value = "day2" />
 				<button type="button" >Day 2</button>
-				<input type = "radio" name = "day" id = "day3" value = "day3" />
+				<input class = "hvr-float-shadow" type = "radio" name = "day" id = "day3" value = "day3" />
 				<button type="button" >Day 3</button>
 			   <br/>
 			   <br/>
 		
 			   <br/>
 			<ul class = "timeline day1 ">
-				<li class="cd-timeline-block">
+				<li class="cd-timeline-block" >
 					<div><div class = "timeline_time">9:00</div>
-						<div class = "timeline-panel ">
+						<div class = "timeline-panel first" onmouseover = 'changeimg("group");' onmouseout = 'changeimg1();'>
 						
 								<div class="timeline-heading ">
 									<h3 class="timeline-title">Cryptography</h3>
@@ -105,7 +109,7 @@
 								</div>
 							
 						</div>
-						<div class = "timeline-inverted timeline-panel ">
+						<div class = "timeline-inverted timeline-panel " onmouseover = 'changeimg("d");' onmouseout = 'changeimg1();'>
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Boolean Event</h3>
 									&nbsp;&nbsp;&nbsp;&nbsp;
@@ -120,7 +124,7 @@
 				</li>
 				<li class="cd-timeline-block"><div ><div class = "timeline_time">10:00</div>
 						
-						<div class = "timeline-inverted one timeline-panel  ">
+						<div class = "timeline-inverted one timeline-panel  "  onmouseover = 'changeimg("kite1");' onmouseout = 'changeimg1();'>
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Innovative Minds</h3>
 									&nbsp;&nbsp;&nbsp;&nbsp;
@@ -135,7 +139,7 @@
 
 				</li>
 				<li class="cd-timeline-block"><div ><div class = "timeline_time">11:00</div>
-						<div class = "timeline-panel ">
+						<div class = "timeline-panel "  onmouseover = 'changeimg("scavenger");' onmouseout = 'changeimg1();'>
 						
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Code Overnight</h3>
@@ -146,7 +150,7 @@
 									</div>
 							
 						</div>
-						<div class = "timeline-inverted timeline-panel ">
+						<div class = "timeline-inverted timeline-panel "  onmouseover = 'changeimg("group");' onmouseout = 'changeimg1();'>
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Web Designing</h3>
 									&nbsp;&nbsp;&nbsp;&nbsp;
@@ -160,7 +164,7 @@
 
 				</li>
 				<li class="cd-timeline-block"><div ><div class = "timeline_time">12:00</div>
-						<div class = "timeline-panel ">
+						<div class = "timeline-panel "  onmouseover = 'changeimg("group");' onmouseout = 'changeimg1();'>
 						
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Code Debugging</h3>
@@ -179,7 +183,7 @@
 								</div>
 							
 						</div>
-						<div class = "timeline-inverted timeline-panel four ">
+						<div class = "timeline-inverted timeline-panel four "  onmouseover = 'changeimg("group");' onmouseout = 'changeimg1();'>
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Dark Horse</h3>
 									&nbsp;&nbsp;&nbsp;&nbsp;
@@ -198,7 +202,7 @@
 			<ul class = "timeline day2">
 				<li class="cd-timeline-block">
 					<div><div class = "timeline_time">9:00</div>
-						<div class = "timeline-panel">
+						<div class = "timeline-panel"  onmouseover = 'changeimg("group");' onmouseout = 'changeimg1();'>
 						
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Gandor</h3>
@@ -209,7 +213,7 @@
 								</div>
 							
 						</div>
-						<div class = "timeline-inverted timeline-panel">
+						<div class = "timeline-inverted timeline-panel"  onmouseover = 'changeimg("scavenger");' onmouseout = 'changeimg1();'>
 								<div class="timeline-heading">
 									<h3 class="timeline-title">I-M-Pedance</h3>
 									&nbsp;&nbsp;&nbsp;&nbsp;
@@ -224,7 +228,7 @@
 				</li>
 				<li class="cd-timeline-block">
 					<div ><div class = "timeline_time one">10:00</div>
-						<div class = "timeline-panel one">
+						<div class = "timeline-panel one"  onmouseover = 'changeimg("group");' onmouseout = 'changeimg1();'>
 						
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Circuit Kitchen</h3>
@@ -240,7 +244,7 @@
 
 				</li>
 				<li class="cd-timeline-block"><div ><div class = "timeline_time">11:00</div>
-						<div class = "timeline-panel">
+						<div class = "timeline-panel"  onmouseover = 'changeimg("group");' onmouseout = 'changeimg1();'>
 						
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Hold Your Nerves</h3>
@@ -251,7 +255,7 @@
 									</div>
 							
 						</div>
-						<div class = "timeline-inverted timeline-panel">
+						<div class = "timeline-inverted timeline-panel"  onmouseover = 'changeimg("group");' onmouseout = 'changeimg1();'>
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Boat Race</h3>
 									&nbsp;&nbsp;&nbsp;&nbsp;
@@ -265,7 +269,7 @@
 
 				</li>
 				<li class="cd-timeline-block"><div ><div class = "timeline_time">12:00</div>
-						<div class = "timeline-panel">
+						<div class = "timeline-panel"  onmouseover = 'changeimg("scavenger");' onmouseout = 'changeimg1();'>
 						
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Android Workshop</h3>
@@ -284,7 +288,7 @@
 								</div>
 							
 						</div>
-						<div class = "timeline-inverted timeline-panel four">
+						<div class = "timeline-inverted timeline-panel four"  onmouseover = 'changeimg("group");' onmouseout = 'changeimg1();'>
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Game Development</h3>
 									&nbsp;&nbsp;&nbsp;&nbsp;
@@ -303,7 +307,7 @@
 			<ul class = "timeline day3">
 				<li class="cd-timeline-block">
 					<div><div class = "timeline_time">9:00</div>
-						<div class = "timeline-panel">
+						<div class = "timeline-panel"  onmouseover = 'changeimg("group");' onmouseout = 'changeimg1();'>
 						
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Boolean</h3>
@@ -314,7 +318,7 @@
 								</div>
 							
 						</div>
-						<div class = "timeline-inverted timeline-panel">
+						<div class = "timeline-inverted timeline-panel"  onmouseover = 'changeimg("group");' onmouseout = 'changeimg1();'>
 								<div class="timeline-heading">
 									<h3 class="timeline-title">clash of titans (war of bands)</h3>
 									&nbsp;&nbsp;&nbsp;&nbsp;
@@ -328,7 +332,7 @@
 
 				</li>
 				<li class="cd-timeline-block"><div ><div class = "timeline_time">10:00</div>
-						<div class = "timeline-panel">
+						<div class = "timeline-panel"  onmouseover = 'changeimg("scavenger");' onmouseout = 'changeimg1();'>
 						
 								<div class="timeline-heading">
 									<h3 class="timeline-title">taal se taal mila</h3>
@@ -339,7 +343,7 @@
 								</div>
 							
 						</div>
-						<div class = "timeline-inverted timeline-panel">
+						<div class = "timeline-inverted timeline-panel"  onmouseover = 'changeimg("group");' onmouseout = 'changeimg1();'>
 								<div class="timeline-heading">
 									<h3 class="timeline-title">set up (dance to tune)</h3>
 									&nbsp;&nbsp;&nbsp;&nbsp;
@@ -353,7 +357,7 @@
 
 				</li>
 				<li class="cd-timeline-block"><div ><div class = "timeline_time">11:00</div>
-						<div class = "timeline-panel">
+						<div class = "timeline-panel"  onmouseover = 'changeimg("group");' onmouseout = 'changeimg1();'>
 						
 								<div class="timeline-heading">
 									<h3 class="timeline-title">mukhota(dramebaji)</h3>
@@ -364,7 +368,7 @@
 									</div>
 							
 						</div>
-						<div class = "timeline-inverted timeline-panel">
+						<div class = "timeline-inverted timeline-panel"  onmouseover = 'changeimg("group");' onmouseout = 'changeimg1();'>
 								<div class="timeline-heading">
 									<h3 class="timeline-title">musicana(singing)</h3>
 									&nbsp;&nbsp;&nbsp;&nbsp;
@@ -378,7 +382,7 @@
 
 				</li>
 				<li class="cd-timeline-block"><div ><div class = "timeline_time">12:00</div>
-						<div class = "timeline-panel">
+						<div class = "timeline-panel"  onmouseover = 'changeimg("group");' onmouseout = 'changeimg1();'>
 						
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Bootstrap released</h3>
@@ -397,7 +401,7 @@
 								</div>
 							
 						</div>
-						<div class = "timeline-inverted timeline-panel four">
+						<div class = "timeline-inverted timeline-panel four"  onmouseover = 'changeimg("group");' onmouseout = 'changeimg1();'>
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Bootstrap released</h3>	
 									&nbsp;&nbsp;&nbsp;&nbsp;									

@@ -18,3 +18,23 @@ jQuery(document).ready(function($){
 		});
 	});
 });
+
+function changeimg(name){
+			var imgUrl= 'images/'+name+'.jpg';
+			
+			var w = window.innerWidth|| document.documentElement.clientWidth|| document.body.clientWidth;
+			var h = window.innerHeight|| document.documentElement.clientHeight|| document.body.clientHeight; 
+			if(w > 650){
+			$('.background img').attr('src',imgUrl);
+			
+			$('.background img').attr('height',h);
+			$('.background img').css('opacity',1);
+			
+}
+}
+
+
+function changeimg1(){
+	var imgUrl= 'images/timeline1.jpg';
+		$('.background img').css('opacity',0);
+	}
