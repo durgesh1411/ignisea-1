@@ -2137,7 +2137,22 @@ background-repeat: no-repeat;
 background-position: center;
 height: 635px;		
 }
-
+.cul_tilenew
+{
+background-image: url('../images/crown2.png') ;
+background-repeat: no-repeat;
+background-position: center;
+height: 635px;	
+}
+.cul_heading_new
+{
+	font-size: 5.4em;
+	text-align: left;
+	color: #453707;
+	font-family: 'Raleway-ExtraLight';
+	padding-top: 38px;
+	padding-left: 580px;
+}
 .cul_heading
 {
 	font-size: 7em;
@@ -2189,6 +2204,16 @@ height: 635px;
 	text-align: left;
 	color: white;
 	font-family: 'Raleway-ExtraLight';
+}
+.cul_inner_text_new
+{
+	font-size: 2.2em;
+	font-family: 'Raleway-ExtraLight';
+	/*padding-top: 100px;*/
+	color: black;
+	padding-left: 650px ;
+
+	
 }
 .cul_inner_text
 {
@@ -2267,6 +2292,12 @@ height: 635px;
 	font-family: 'Raleway-ExtraLight';
 	color: #2288B7;
 }
+.cul_side_text_new
+{
+  font-size: 2em;
+ font-family: 'Raleway-ExtraLight';
+ color: #453707;
+}
 .cul_side_text
 {
   font-size: 2em;
@@ -2332,6 +2363,14 @@ font-size: 1.8em;
   font-family: 'Raleway-ExtraLight';
   font-weight: 800;
 }
+.cul_side_new
+{
+	/*margin-top: -190px;*/
+	text-align: left;
+	padding-left: 750px;
+	font-family: 'Raleway-ExtraLight';
+	font-weight: 800;
+}
 .cul_side{
 	margin-top: -190px;
 	text-align: left;
@@ -2382,6 +2421,26 @@ width:auto;
 padding-right:0px !important;
 background-color:#0C0C17 !important;
 }
+/* Effect 11: Super scaled */
+.md-effect-11 .md-content {
+	-webkit-transform: scale(2);
+	-moz-transform: scale(2);
+	-ms-transform: scale(2);
+	transform: scale(2);
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.md-show.md-effect-11 .md-content {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+
 .md-modal {
 	position: fixed;
 	top: 50%;
@@ -2472,6 +2531,21 @@ background-color:#0C0C17 !important;
 	font-size: 1.2em;
 	color: #E0516A;
 	padding: 5px;
+}
+.md-perspective,
+.md-perspective body {
+    height: 100%;
+    overflow: hidden;
+}
+ 
+.md-perspective body  {
+    background: #222;
+    perspective: 600px;
+}
+ 
+.container {
+    background: #e74c3c;
+    min-height: 100%;
 }
 .regi_but
 {
@@ -3612,6 +3686,12 @@ font-weight:bold;
 width:400px;
 font-family:'Raleway-ExtraLight';
 
+}
+@media screen and (min-width: 728px) and (max-width: 1360px){
+	#heading1
+	{
+		font-size: 2em;
+	}
 }
 
 /*fun events css ends*/
