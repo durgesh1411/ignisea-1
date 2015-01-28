@@ -24,7 +24,7 @@ function draw()
 {
 	//Black BG for the canvas
 	//translucent BG to show trail
-	ctx.fillStyle = "rgba(110,110,110,0.12)";
+	ctx.fillStyle = "rgba(24,101,126,0.12)";
 	ctx.fillRect(0, 0, c.width, c.height);
 	
 	ctx.fillStyle = "rgb(60,179,113)"; //green text
@@ -48,10 +48,6 @@ function draw()
 }
 
 setInterval(draw, 100);
-
-
-
-
 
 
 
