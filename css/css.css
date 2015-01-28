@@ -2917,14 +2917,13 @@ background-color:#0C0C17 !important;
 /*=======Cultural Events Page CSS Ends================*/
 
 /*=============Literary Page CSS starts===============*/
-
 .lit_top{
 background-image:url('../images/lit_bac.jpg');
 background-repeat:no-repeat;
 background-position:center;
 width:100%;
 height:100%;
-  }
+}
   
 .lit_heading{
 position:absolute;
@@ -2937,7 +2936,7 @@ font-family:Times New Roman ;
 #lit_bg{
 opacity:0.9;
 position:relative;
-height:100%; /* preserve aspect ratio */
+height:100%; 
 width:100%;
 z-index:-1;
 }
@@ -2957,37 +2956,31 @@ margin-top:0;
 }
 .lit_heading{
 font-size:3em;
-padding:7%;
+padding:8%;
 }
 #lit_bg{
 height:300px;
 }
+.lit_top{
+background:none;
+}
 }
 .lit_event{
 padding:2%;
-
 }
 
 .top_row{
 margin-left:5px !important;
 overflow:hidden;
 }
-.top_image{
-width:100%;
-height:100%;
-}
-.top_right{
-padding:5%;
-}
-.top_left{
-overflow:hidden;
-}
-.right_list{
-font-family: 'Hind', sans-serif !important;
-margin-top:25px;
-}
+
 .right_list2{
 margin-top:35px;
+}
+@media(max-width:770px){
+.right_list2{
+margin-top:0px;
+}
 }
 .list{
 padding:2%;
@@ -2999,29 +2992,13 @@ padding-right:0px !important;
 background-color:#181719;
 }
 
-.top_sub{
-font-size:20px;
-line-height:2em;
-color: rgba(128, 128, 128, 0.75)!important;
-font-weight:500 !important;
-}
 .top_font{
 line-height:2em;
 color:#6B7770;
 font-size:11.5pt;
 font-weight:400;
 }
-.top2_right{
-overflow:hidden;
-}
-ul{
-list-style:none;
-}
 
-
-.right_img{
-height:200px;
-}
 .register_btn{
 background-color:alizarin !important;
 opacity:;
@@ -3054,12 +3031,17 @@ bottom:-1px;
 position:absolute;
 }
 .move_right{
-padding-left:20%%;
+padding-left:20%;
 margin-top:-40px;
 margin-bottom:0px;
 color:#483949 !important;
 opacity:0.7;
-padding-right:170px;
+}
+@media(max-width:500px){
+.move_right{
+padding-left:30%;
+}
+
 }
 .position{
 margin-top:30px;
@@ -3067,63 +3049,90 @@ margin-bottom:30px;
 }.position_li{
 position:relative !important;
 }
-.arrow1{
-width:210px;
-height:131px;
-background:grey;
-padding: 1.75em 0px 0.75em;
-border-bottom-left-radius: 5px;
-border-bottom-right-radius: 5px;
-margin: 0px 0px 0px;
-box-shadow: 0 0 10px 1px white;
-	-webkit-box-shadow: 0 0 10px 1px white;
-	-moz-box-shadow: 0 0 10px 1px white;
-}
-.cone1{
-width:210px;
-border-top: 2em solid grey;
-border-left: 7.5em solid transparent !important;
-border-right: 7.5em solid transparent !important;
-transform:rotate(180deg);
 
-}
+
 .cover_lit{
 background-color: #F2F2F2 !important;
 font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
 font-size: 14px !important;
 }
-.hr{
+#lit_hr{
 border-color:#DF7366 !important;
 opacity:0.3;
+width:80%;
+float:center;
 }
 .move_right:hover{
 color:#DF7366 !important;
 opacity:1;
 }
 
-.opaque_right{
-display:block !important;
-
-}
-.opacity_right_0{
-display:none;
-position:relative;
-}
-.selected{
-}
 
 .img1{
 overflow:hidden;
 padding:4%;
 height:350px;
 width:100%;
-opacity:0.7;
+opacity:0.9;
 }
 @media(max-width:770px){
 .img1{
 height:100%;
 }
 }
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #00d9ff; }
+
+
 /*==============literay page css ends=========*/
 /*fun events page css starts*/
 body {
