@@ -15,47 +15,41 @@
 
 	</head>
 	<body>
-		<div class="md-modal md-effect-11" id="modal-1">
-			<div class="md-content">
-				<h3>STEP UP</h3>
-				<div>
-					<p><strong>Rules:</strong></p>
-					<ol>
-						<li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-						<li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-						<li><strong>Close:</strong> click on the button below to close the modal.</li>
-					</ol>
-					<div class="regi_but">
-					<button class="md-close">Register here!</button>
-				</div>
-			</div>
-				<div class="close_but">
-					<button class="md-close">Close me!</button>
-				</div>
+	<div class="modal fade t_modal_1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    	<div class="modal-dialog modal-lg cul_set_modal">
+      		<div class="modal-content">
+        		<div class="modal-header">
+          			<button type="button" class="close" data-dismiss="modal">
+          				<span aria-hidden="true">&times;</span>
+          				<span class="sr-only">Close</span>
+          			</button>
+          			<h1 class="modal-title" id="myModalLabel">CLINCH THE CROWN</h1>
+        		</div>
+        		<div class="modal-body cul_content_color">
+          			
+          			<div class="row ">
+            			
+            			
+              				<h3><u>Description/Rules Of Event</u> :</h3>
+              				<ol >
+                				<li>Number of team Members</li>
+                				<li>Duration Of Event</li>
+                				<li>Other Details of Event</li>
+                				<li>Prizes</li>
+              				</ol>
+              				
+            			
+          			</div>
+        		</div>
+        		<div class="modal-footer">
+          			<button type="button" class="btn btn-primary">Register</button>
+        		</div>
+      		</div>
+    	</div>
+  	</div>
 
-			</div>
-		</div>
-		<div class="md-modal md-effect-11" id="modal-2">
-			<div class="md-content">
-				<h3>STEP UP</h3>
-				<div>
-					<p><strong>Rules:</strong></p>
-				</div>
-					<ol>
-						<li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-						<li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-						<li><strong>Close:</strong> click on the button below to close the modal.</li>
-					</ol>
-					<div class="regi_but">
-					<button class="md-close">Register here!</button>
-					</div>
-					<div class="close_but">
-						<button class="md-close">Close me!</button>
-					</div>
-			</div>
-		</div>
 		
-		</div><nav class="navbar navbar-inverse navbar-fixed-top main_nav_colour" role="navigation">
+		<nav class="navbar navbar-inverse navbar-fixed-top main_nav_colour" role="navigation">
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
@@ -127,7 +121,7 @@
 		<div class="cul_body">
 
 		</div>
-
+		
 		<div class="cul_tilenew">
 			<div class="cul_heading_new" id="new">
 				CLINCH THE CROWN
@@ -136,7 +130,7 @@
 				Mr. and Ms. Amenite
 			</div>
 			<div class="cul_side_new">
-				<div class="cul_side1_inner_text">Date:</div><div class="cul_side_text_new">17-2-2015</div><br><div class="cul_side1_inner_text">Venue:</div><div class="cul_side_text_new">Dashmesh Auditorium</div><br><div class="cul_side1_inner_text">Registration fee:</div><div class="cul_side_text_new">Rs.50</div><br><div class="cul_link_tile2"><a class="md-trigger b" data-modal="modal-1" >Rules & Registration</a></div>
+				<div class="cul_side1_inner_text">Date:</div><div class="cul_side_text_new">17-2-2015</div><br><div class="cul_side1_inner_text">Venue:</div><div class="cul_side_text_new">Dashmesh Auditorium</div><br><div class="cul_side1_inner_text">Registration fee:</div><div class="cul_side_text_new">Rs.50</div><br><div class="cul_link_tile2 b"><a data-toggle="modal" data-target=".t_modal_1">Rules and Registration</a></div>
 			</div>
 		</div>
 
@@ -347,9 +341,7 @@
 
 				 
 			</div><!--container_foot ends-->	
-<div class="md-overlay"></div><!-- the overlay element -->
 
-		
 		
 		<script src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/jquery.lettering.js"></script>
@@ -377,34 +369,43 @@
 
     setTimeout(function () {
       $('.hinge').removeClass('out');
-    }, 200);*/
+    }, 200);**/
 
  
-  	$(function () {  
+  	/*$(function () { 
+  	window.focus()
+  {
+
+  
     $('.cul_heading_new').textillate({  
         in: {  
             effect: 'bounce'  
         }  
-    });  
-  });
-   /*
-    $('.cul_heading_new').scroll(function)textillate({  
+    }); 
+    } 
+  }*/
+
+   
+    /*$('.cul_tilenew').focus(function()
+    	{
+    		textillate({  
         in: {  
             effect: 'bounce'
         }
         
         
     });  
-  });
+  });*/
 
-  $('.cul_tile1').scroll()
-  (function(){
-  	$('.cul_heading').textillate({  
+  $(."cul_tilenew").focus(function()
+  {
+  	$('.cul_heading_new').textillate({  
         in: {  
             effect: 'bounce'  
-        } 
-    });  
-  });*/
+        	} 
+    }); 
+    }); 
+  
   
   
   </script>
